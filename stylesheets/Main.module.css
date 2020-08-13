@@ -50,6 +50,11 @@
   padding: 0 !important;
 }
 
+.stat {
+  color: var(--rhone-green);
+  font-size: var(--font-smaller);
+}
+
 
 /* Video styles */
 .videoResponsive{

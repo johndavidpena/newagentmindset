@@ -4,7 +4,7 @@ import Router from 'next/router';
 
 const SignOut = () => (
   <button
-    className={FormStyles.button}
+    className={FormStyles.signoutButton}
     type="button"
     onClick={() => {
       firebase.auth().signOut();

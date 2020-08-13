@@ -1,11 +1,21 @@
-// import Head from 'next/head';
+import Router from 'next/router'
 import Layout from '../components/Layout';
-import UserProvider from '../context/userContext'
+import UserProvider from '../context/userContext';
+import * as gtag from '../utils/gtag';
+import * as Sentry from '@sentry/browser';
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 
 export default function MyApp({ Component, pageProps }) {
+  Sentry.init({ dsn: "https://2e3a4a68f6c249bbbcb72d73e428aa9a@o382987.ingest.sentry.io/5389876" });
+
+  Router.events.on('routeChangeComplete', url => gtag.pageview(url));
+
   return (
     <Layout content={(
       <>
+        <DefaultSeo {...SEO} />
+
         <UserProvider>
           <Component {...pageProps} />
         </UserProvider>

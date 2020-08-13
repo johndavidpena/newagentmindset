@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import Link from 'next/link';
-import HeaderStyles from './Header.module.css';
 import Burger from '../Burger';
 import SideMenu from '../SideMenu';
 import { useOnClickOutside } from '../../hooks/burgerHook';
+import HeaderStyles from './Header.module.css';
 
 const Header = ({ open, setOpen }) => {
   const node = React.useRef();
@@ -12,8 +12,8 @@ const Header = ({ open, setOpen }) => {
   return (
     <nav className={HeaderStyles.burger}>
       <div ref={node}>
-        <Burger open={open} setOpen={setOpen} />
-        <SideMenu open={open} setOpen={setOpen} />
+        {/* <Burger open={open} setOpen={setOpen} /> */}
+        {/* <SideMenu open={open} setOpen={setOpen} /> */}
       </div>
 
       <div className={HeaderStyles.nameContainer}>

@@ -1,0 +1,30 @@
+.page {}
+
+.page h1 {
+  text-align: center;
+  color: var(--text-light);
+}
+
+.toMembersBtn {
+  appearance: none;
+  outline: 0;
+  background-color: var(--rhone-orange);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  color: var(--grey-050);
+  width: 225px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  margin: 2rem auto;
+}
+
+.toMembersBtn span {
+  color: var(--grey-050);
+  font-size: 2rem;
+  line-height: 2rem;
+}

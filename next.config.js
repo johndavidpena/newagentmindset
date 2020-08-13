@@ -1,4 +1,4 @@
-// On production, variables are set with `now secrets`.
+// On production, variables are set with ENV VARIABLES or `now secrets`
 // On development, they use the .env file
 require('dotenv').config();
 

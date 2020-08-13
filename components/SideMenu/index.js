@@ -1,5 +1,5 @@
-import SideMenuStyles from './SideMenu.module.css';
 import Link from 'next/link';
+import SideMenuStyles from './SideMenu.module.css';
 
 const Menu = ({ open, setOpen }) => {
   const openStyle = {
