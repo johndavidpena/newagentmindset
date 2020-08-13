@@ -28,7 +28,7 @@ const SignIn = () => {
       await firebase.auth().signInWithEmailAndPassword(values.email, values.password)
         .then(() => {
           console.log('Signed In');
-          Router.push('/members');
+          Router.push('/start-with-why');
         })
         .catch(error => {
           console.log('onSubmit error: ', error);

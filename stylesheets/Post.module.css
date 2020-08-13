@@ -1,10 +1,8 @@
-.page {
-  /* For the signout button */
-  position: relative;
-}
+.page {}
 
 .page h1 {
   text-align: center;
   margin-bottom: 1rem;
   color: var(--text-light);
+  font-weight: 400;
 }

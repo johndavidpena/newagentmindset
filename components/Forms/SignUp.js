@@ -43,7 +43,7 @@ const SignUp = () => {
         })
         .then(() => {
           console.log('Signed Up');
-          Router.push('/members');
+          Router.push('/start-with-why');
         })
         .catch(error => {
           console.log('onSubmit error: ', error);

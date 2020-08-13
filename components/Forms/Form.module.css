@@ -71,7 +71,7 @@
   cursor: pointer;
   font-size: 18px;
   transition-duration: 0.25s;
-  margin: 0 auto;
+  margin: 8px auto;
   display: block;
   text-decoration: none;
 }
@@ -111,7 +111,7 @@
   cursor: pointer;
   font-size: 18px;
   transition-duration: 0.25s;
-  margin: 0 auto;
+  margin: 8px auto;
   display: block;
   text-decoration: none;
 }
@@ -132,7 +132,7 @@
   cursor: pointer;
   font-size: 18px;
   transition-duration: 0.25s;
-  margin: 0 auto;
+  margin: 8px auto;
   display: block;
   text-decoration: none;
 }

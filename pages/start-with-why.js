@@ -94,7 +94,16 @@ export default () => {
 
         <p>My humble suggestion, take as much time as you need to figure it out NOW. Don't wait, start thinking about it right now and iron it out. Talk to your family and friends if that helps or maybe you already know exactly what it is. Either way, start with WHY!</p>
 
-        {/* <SignOut /> */}
+        <p>In the spirit of community, please consider joining the private Facebook group below!</p>
+
+        <button className={MainStyles.button}>
+          <a href='https://bit.ly/3kI6Ngw' target='_blank'>Join Now</a>
+        </button>
+
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </>
   );

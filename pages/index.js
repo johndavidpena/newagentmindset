@@ -8,6 +8,7 @@ import SignUp from '../components/Forms/SignUp';
 import SignIn from '../components/Forms/SignIn';
 import SignOut from '../components/Forms/SignOut';
 import IndexStyles from '../stylesheets/Index.module.css';
+import MainStyles from '../stylesheets/Main.module.css';
 
 export default () => {
   // Our custom hook to get context values
@@ -87,16 +88,29 @@ export default () => {
           <SignUp />
 
           <SignIn />
+
+          <br />
+          <br />
+          <br />
+          <br />
         </>)}
 
         {user && (
           <>
             <Link href='/start-with-why'>
-              <button className={IndexStyles.toMembersBtn}>
-                <span>&#10516;&nbsp;</span>Begin!</button>
+              <button className={MainStyles.button}>
+                Begin<span className={IndexStyles.arrow}>&nbsp;&#10516;</span></button>
             </Link>
 
+            <br />
+            <br />
+
             <SignOut />
+
+            <br />
+            <br />
+            <br />
+            <br />
           </>)}
       </div>
     </>
