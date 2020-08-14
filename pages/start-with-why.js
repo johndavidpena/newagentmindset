@@ -65,11 +65,11 @@ export default () => {
         <p>Now, I can't take credit for this line of questioning because 'start with WHY' is all over place right now, from books to podcasts to everything. It's no wonder that it seems to be the go-to advice now because there are so many shiny objects out there to chase - so many WHAT's and HOW's.</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597335370/New%20Agent%20Mindset/focus-on-why-m.jpg' alt='focus-on-why' title='focus-on-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434739/New%20Agent%20Mindset/focus-on-why-m.jpg' alt='focus-on-why' title='focus-on-why' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597335371/New%20Agent%20Mindset/focus-on-why-d.jpg' alt='focus-on-why' title='focus-on-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434445/New%20Agent%20Mindset/focus-on-why-d.jpg' alt='focus-on-why' title='focus-on-why' />
         )}
 
         <p>Some advantages of starting with WHY are that it provides a certain clarity and focus to what you do with your time and energy. It puts up some long term goal posts to aim for, and your WHY helps you figure out if this is something that you're actually passionate about. And if you're not passionate and committed to being a real estate agent, you're not going to stick with it.</p>

@@ -17,7 +17,8 @@ export default () => {
   useEffect(() => {
     if (!loadingUser) {
       // You know that the user is loaded: either logged in or out!
-      console.log('[pages/index.js] user: ', user)
+      // console.log('[pages/index.js] user: ', user);
+      console.log('[pages/index.js]');
     }
     // You also have your firebase app initialized
     // console.log('[pages/index.js] firebase: ', firebase)
@@ -59,11 +60,11 @@ export default () => {
         <p>In a nutshell, lead generation or lead gen. <i>New Agent Mindset</i> is all about providing new real estate agents with the best advice, habits, attitudes, tools, and strategies to make it in the industry.</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597332555/New%20Agent%20Mindset/john-pen%CC%83a-m.jpg' alt='john-peña' title='john-peña' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434977/New%20Agent%20Mindset/john-pena-m.jpg' alt='john-pena' title='john-pena' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597332561/New%20Agent%20Mindset/john-pen%CC%83a-d.jpg' alt='john-peña' title='john-peña' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597435150/New%20Agent%20Mindset/john-pena-d.jpg' alt='john-pena' title='john-pena' />
         )}
 
         <p>My name is John Peña and I am a real estate agent with eXp Realty. I got into real estate in January of 2020, about a month before coronavirus blew up the world.</p>
@@ -73,11 +74,11 @@ export default () => {
         <p>The pandemic made a book club unrealistic, which helped me realize that there are a LOT of new real estate agents out there, probably going through the same growing pains as myself. So, why not create a community for them?</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597332555/New%20Agent%20Mindset/successful-agent-mindset-m.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434867/New%20Agent%20Mindset/successful-agent-mindset-m.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597332559/New%20Agent%20Mindset/successful-agent-mindset-d.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434867/New%20Agent%20Mindset/successful-agent-mindset-d.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
         )}
 
         <p>And that is exactly what <i>New Agent Mindset</i> is, a community for new real estate agents looking to build a successful business quickly and efficiently! Aside from studying and delivering content from the best voices in the industry, I will also share as much useful advice as I possibly can from my own ups and downs.</p>
