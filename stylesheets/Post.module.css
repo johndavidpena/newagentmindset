@@ -1,8 +1,20 @@
 .page {}
 
-.page h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: var(--text-light);
-  font-weight: 400;
+.title1,
+.title2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--off-white);
+}
+@media (min-width: 640px) {
+  .title1,
+  .title2 {
+    font-size: 4rem;
+  }
+}
+
+.title2 {
+  color: var(--rhone-orange);
 }

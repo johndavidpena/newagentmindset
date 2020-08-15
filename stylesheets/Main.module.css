@@ -74,6 +74,10 @@
 }
 
 /* Video styles */
+.container {
+  margin: 4rem 0;
+}
+
 .videoResponsive{
   overflow: hidden;
   padding-bottom: 56.25%;

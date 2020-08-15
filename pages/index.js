@@ -47,25 +47,31 @@ export default () => {
 
       <NextSeo
         title='New Agent Mindset - New Real Estate Agents'
-        description='New Agent Mindset'
+        description='New Agent Mindset is a podcast and Youtube channel for new real estate agents just getting started. New realtors often face challenges getting going and this site and corresponding resources exist to help new agents get going.'
         canonical='https://newagentmindset.com/'
       />
 
       <div className={IndexStyles.page}>
-        {/* <h1>NOW with Firebase Client-Side template (Julian)</h1> */}
-        <h1>New Agent Mindset</h1>
+        <h1 className={IndexStyles.title1}>new agent
+         <span aria-hidden="true" className={IndexStyles.title2}>&nbsp;mindset</span>
+        </h1>
 
         <p>You made it! You're a real estate agent. Now what?</p>
 
         <p>In a nutshell, lead generation or lead gen. <i>New Agent Mindset</i> is all about providing new real estate agents with the best advice, habits, attitudes, tools, and strategies to make it in the industry.</p>
 
-        {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434977/New%20Agent%20Mindset/john-pena-m.jpg' alt='john-pena' title='john-pena' />
+        <div className={MainStyles.container}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='new-agent-mindset-episode-1-video' width="560" height="315" src="https://www.youtube.com/embed/AOFjYJgV5NA" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>
+        {/* {screenSize === 'mobile' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532159/New%20Agent%20Mindset/john-pena-index-m.jpg' alt='john-pena' title='john-pena' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597435150/New%20Agent%20Mindset/john-pena-d.jpg' alt='john-pena' title='john-pena' />
-        )}
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532159/New%20Agent%20Mindset/john-pena-index-d.jpg' alt='john-pena' title='john-pena' />
+        )} */}
 
         <p>My name is John Peña and I am a real estate agent with eXp Realty. I got into real estate in January of 2020, about a month before coronavirus blew up the world.</p>
 
@@ -74,11 +80,11 @@ export default () => {
         <p>The pandemic made a book club unrealistic, which helped me realize that there are a LOT of new real estate agents out there, probably going through the same growing pains as myself. So, why not create a community for them?</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434867/New%20Agent%20Mindset/successful-agent-mindset-m.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532361/New%20Agent%20Mindset/successful-agent-m.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434867/New%20Agent%20Mindset/successful-agent-mindset-d.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532361/New%20Agent%20Mindset/successful-agent-d.jpg' alt='successful-agent-mindset' title='successful-agent-mindset' />
         )}
 
         <p>And that is exactly what <i>New Agent Mindset</i> is, a community for new real estate agents looking to build a successful business quickly and efficiently! Aside from studying and delivering content from the best voices in the industry, I will also share as much useful advice as I possibly can from my own ups and downs.</p>

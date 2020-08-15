@@ -48,14 +48,16 @@ export default () => {
       />
 
       <div className={PostStyles.page}>
-        <h1>Start with WHY</h1>
+        <h1 className={PostStyles.title1}>start with
+         <span aria-hidden="true" className={PostStyles.title2}>&nbsp;why</span>
+        </h1>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597334022/New%20Agent%20Mindset/start-whith-why-m.jpg' alt='start-with-why' title='start-with-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532499/New%20Agent%20Mindset/start-whith-why-m.jpg' alt='start-with-why' title='start-with-why' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597334022/New%20Agent%20Mindset/start-whith-why-d.jpg' alt='start-with-why' title='start-with-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532496/New%20Agent%20Mindset/start-whith-why-d.jpg' alt='start-with-why' title='start-with-why' />
         )}
 
         <p>Anytime that you start something new, most people start with WHAT, HOW, or WHEN. This makes complete sense, say I want to learn how to cook better. That's the WHAT (learn how to cook) and there's probably a WHY behind it. Maybe I think it'll be a fun hobby, or I want a healthier lifestyle, or maybe a global pandemic fell on top of our heads and I can't go out to eat as easily!</p>
@@ -65,11 +67,11 @@ export default () => {
         <p>Now, I can't take credit for this line of questioning because 'start with WHY' is all over place right now, from books to podcasts to everything. It's no wonder that it seems to be the go-to advice now because there are so many shiny objects out there to chase - so many WHAT's and HOW's.</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434739/New%20Agent%20Mindset/focus-on-why-m.jpg' alt='focus-on-why' title='focus-on-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-m.jpg' alt='focus-on-why' title='focus-on-why' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597434445/New%20Agent%20Mindset/focus-on-why-d.jpg' alt='focus-on-why' title='focus-on-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-d.jpg' alt='focus-on-why' title='focus-on-why' />
         )}
 
         <p>Some advantages of starting with WHY are that it provides a certain clarity and focus to what you do with your time and energy. It puts up some long term goal posts to aim for, and your WHY helps you figure out if this is something that you're actually passionate about. And if you're not passionate and committed to being a real estate agent, you're not going to stick with it.</p>
@@ -81,11 +83,11 @@ export default () => {
         <p>Now if that doesn't sober you up, nothing will! If you can't come up with a good enough WHY, you might as well quit now because being an agent is hard work that pays you $0 until you earn that first commission check.</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597336519/New%20Agent%20Mindset/aim-for-stars-m.jpg' alt='aim-for-stars' title='aim-for-stars' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532773/New%20Agent%20Mindset/aim-for-stars-m.jpg' alt='aim-for-stars' title='aim-for-stars' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597336520/New%20Agent%20Mindset/aim-for-stars-d.jpg' alt='aim-for-stars' title='aim-for-stars' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532773/New%20Agent%20Mindset/aim-for-stars-d.jpg' alt='aim-for-stars' title='aim-for-stars' />
         )}
 
         <p>So, what's my WHY? Well, after a lot of thought and contemplation, this is my WHY. I've always believed that everything/anything is possible, including my potential as a human being. The only thing that limits me, is ME. Life is short, so my WHY is "to be more, to realize my full potential, to reach for the stars."</p>
