@@ -1,5 +1,3 @@
-.page {}
-
 .title1,
 .title2 {
   font-size: 3rem;
@@ -21,4 +19,43 @@
 
 .arrow {
   color: var(--grey-050);
+}
+
+.thumbnailContainer {
+  position: relative;
+}
+
+.thumbnailContainer img {
+  opacity: 0.5;
+}
+
+.thumbnailContainer button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  appearance: none;
+  outline: 0;
+  background-color: var(--blue);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  color: var(--grey-050);
+  width: 225px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  margin: 8px auto;
+  display: block;
+  text-decoration: none;
+
+  box-shadow: var(--box-shadow);
+  z-index: 2;
+}
+
+.thumbnailContainer button:hover {
+  color: var(--grey-800);
 }

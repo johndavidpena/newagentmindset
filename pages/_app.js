@@ -60,15 +60,8 @@ export default function MyApp({ Component, pageProps }) {
           --off-white: hsl(0, 0%, 99%);
 
           --rhone-orange: #FF6822;
-          --rhone-orangeText: #FFDCCC;
-          --rhone-yellow: #FFC400;
-          --rhone-yellowText: #FFF3CC;
           --rhone-green: #3AD771;
-          --rhone-greenText: #D5F6E0;
-          --rhone-darkBlue: #2B3654;
-          --rhone-darkBlueText: #DDE2EE;
-          --rhone-lime: #D2E12D;
-          --rhone-limeText: #F5F9D2;
+          --blue: #228AFF;
 
           --grey-050: #F7F7F7;
           --grey-100: #E1E1E1;

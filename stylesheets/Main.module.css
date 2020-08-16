@@ -59,7 +59,6 @@
   appearance: none;
   outline: 0;
   background-color: var(--rhone-orange);
-  /* border: 1px solid var(--grey-700); */
   border: none;
   border-radius: var(--border-radius);
   padding: 10px 15px;
