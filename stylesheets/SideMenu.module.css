@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--grey-200);
+  background: rgba(0,0,0,0.9);;
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -13,12 +13,12 @@
   transition: transform 0.3s ease-in-out;
 
   transform: translateX(-100%);
-  z-index: 1;
+  z-index: 3;
 }
 
 @media (max-width: 640px) {
   .menu {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -29,7 +29,7 @@
   padding: 2rem 0;
   letter-spacing: 0.5rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--text-light);
   text-decoration: none;
   transition: color 0.3s linear;
 }
@@ -40,7 +40,3 @@
     text-align: center;
   }
 }
-
-/* nav a:hover {
-  color: var(--grey-500);
-} */

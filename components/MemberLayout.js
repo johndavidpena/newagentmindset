@@ -2,8 +2,8 @@ import { useSpring, animated } from 'react-spring';
 import { useWindowSize } from '../hooks/useWindowSize';
 import { useState, useEffect } from 'react';
 import MainStyles from '../stylesheets/Main.module.css';
-import MobHeader from './MobHeader';
-import DeskNav from './DeskNav';
+import MemberMobileMenu from './MemberMobileMenu';
+import MemberDeskMenu from './MemberDeskMenu';
 
 export default props => {
   const fade = useSpring({ config: { duration: 950 }, from: { opacity: 0 }, opacity: 1 });
@@ -19,8 +19,6 @@ export default props => {
     } else if (width > 768) {
       setMenu('desktop');
     }
-
-    // TODO: Clean up hook below to avoid memory leak
     return () => { };
   }, [width]);
 
@@ -29,7 +27,7 @@ export default props => {
   return (
     <animated.div style={fade}>
       <div className={MainStyles.pageGrid}>
-        {menu === 'mobile' && <MobHeader open={open} setOpen={setOpen} /> || <DeskNav />}
+        {menu === 'mobile' && <MemberMobileMenu open={open} setOpen={setOpen} /> || <MemberDeskMenu />}
 
         <main className={MainStyles.page}>
           {props.content}

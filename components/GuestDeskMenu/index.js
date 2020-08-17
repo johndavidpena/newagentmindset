@@ -1,12 +1,15 @@
 import Link from 'next/link';
-import NavStyles from './Navigation.module.css';
+import NavStyles from '../../stylesheets/Navigation.module.css';
 
-const DeskNav = () => (
+const GuestDeskMenu = () => (
   <div>
     <div className={NavStyles.nameContainer}>
+      <Link href='/blog/index'>
+        <a onClick={() => setOpen(!open)}>blog</a>
+      </Link>
+
       <Link href='/'>
         <a>
-          {/* <span className={NavStyles.firstName}>next</span> */}
           <span className={NavStyles.lastName}>nam
          <span aria-hidden="true" className={NavStyles.period}>.</span>
           </span>
@@ -16,4 +19,4 @@ const DeskNav = () => (
   </div>
 );
 
-export default DeskNav;
+export default GuestDeskMenu;

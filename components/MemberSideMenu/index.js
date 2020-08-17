@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import SideMenuStyles from './SideMenu.module.css';
+import SideMenuStyles from '../../stylesheets/SideMenu.module.css';
 
-const Menu = ({ open, setOpen }) => {
+const MemberSideMenu = ({ open, setOpen }) => {
   const openStyle = {
     transform: 'translateX(0)'
   }
@@ -17,8 +17,16 @@ const Menu = ({ open, setOpen }) => {
       <Link href='/'>
         <a onClick={() => setOpen(!open)}>Home</a>
       </Link>
+
+      <Link href='/blog/index'>
+        <a onClick={() => setOpen(!open)}>Blog</a>
+      </Link>
+
+      <Link href='/resources/index'>
+        <a onClick={() => setOpen(!open)}>Resources</a>
+      </Link>
     </div>
   );
 }
 
-export default Menu;
+export default MemberSideMenu;

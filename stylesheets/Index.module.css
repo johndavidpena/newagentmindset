@@ -1,6 +1,8 @@
+
+
 .title1,
 .title2 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 900;
   text-transform: uppercase;
@@ -15,6 +17,10 @@
 
 .title2 {
   color: var(--rhone-orange);
+}
+
+.RSS {
+  color: var(--blue);
 }
 
 .arrow {

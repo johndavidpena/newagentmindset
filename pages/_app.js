@@ -1,5 +1,4 @@
 import Router from 'next/router'
-import Layout from '../components/Layout';
 import UserProvider from '../context/userContext';
 import * as gtag from '../utils/gtag';
 import * as Sentry from '@sentry/browser';
@@ -12,14 +11,13 @@ export default function MyApp({ Component, pageProps }) {
   Router.events.on('routeChangeComplete', url => gtag.pageview(url));
 
   return (
-    <Layout content={(
-      <>
-        <DefaultSeo {...SEO} />
+    <>
+      <DefaultSeo {...SEO} />
 
-        <UserProvider>
-          <Component {...pageProps} />
-        </UserProvider>
-        <style jsx global>{`
+      <UserProvider>
+        <Component {...pageProps} />
+      </UserProvider>
+      <style jsx global>{`
         {/* Breakpoints from https://flaviocopes.com/css-breakpoints/
         mobile portrait: less than 640px
         mobile landscape: > 640px
@@ -303,7 +301,6 @@ export default function MyApp({ Component, pageProps }) {
           display: none;
         }
       `}</style>
-      </>
-    )} />
+    </>
   );
 }
