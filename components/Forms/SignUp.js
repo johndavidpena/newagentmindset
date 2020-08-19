@@ -74,7 +74,8 @@ const SignUp = () => {
           ) : null}
           <input
             className={FormStyles.input}
-            id="email"
+            // ORIGINAL CODE id="email"
+            id="signupEmail"
             name="email"
             placeholder="Email"
             type="email"

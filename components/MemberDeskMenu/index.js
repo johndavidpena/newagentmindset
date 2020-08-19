@@ -5,12 +5,12 @@ const MemberDeskMenu = () => (
   <div>
     <div className={NavStyles.nameContainer}>
       <div className={NavStyles.deskLinkContainer}>
-        <Link href='/blog/index'>
+        <Link href='/blog/'>
           <a className={NavStyles.deskLink}
             onClick={() => setOpen(!open)}>blog</a>
         </Link>
 
-        <Link href='/resources/index'>
+        <Link href='/resources/'>
           <a className={NavStyles.deskLink}
             onClick={() => setOpen(!open)}>resources</a>
         </Link>

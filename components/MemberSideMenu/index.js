@@ -18,11 +18,11 @@ const MemberSideMenu = ({ open, setOpen }) => {
         <a onClick={() => setOpen(!open)}>Home</a>
       </Link>
 
-      <Link href='/blog/index'>
+      <Link href='/blog/'>
         <a onClick={() => setOpen(!open)}>Blog</a>
       </Link>
 
-      <Link href='/resources/index'>
+      <Link href='/resources/'>
         <a onClick={() => setOpen(!open)}>Resources</a>
       </Link>
     </div>

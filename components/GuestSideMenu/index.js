@@ -18,7 +18,7 @@ const GuestSideMenu = ({ open, setOpen }) => {
         <a onClick={() => setOpen(!open)}>Home</a>
       </Link>
 
-      <Link href='/blog/index'>
+      <Link href='/blog/'>
         <a onClick={() => setOpen(!open)}>Blog</a>
       </Link>
     </div>
