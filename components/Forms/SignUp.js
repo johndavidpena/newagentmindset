@@ -52,7 +52,7 @@ const SignUp = () => {
   });
 
   return (
-    <div className={MainStyles.wrapper}>
+    <div className={FormStyles.formWrapper}>
       <div className={FormStyles.container}>
         <h1>Sign Up</h1>
         <form onSubmit={formik.handleSubmit} className={FormStyles.form}>
@@ -87,7 +87,8 @@ const SignUp = () => {
             id="passwordOne"
             name="passwordOne"
             placeholder="Password"
-            type="text"
+            // type="text"
+            type='password'
             onChange={formik.handleChange}
             value={formik.values.passwordOne}
           />
@@ -96,12 +97,13 @@ const SignUp = () => {
             id="passwordTwo"
             name="passwordTwo"
             placeholder="Confirm password"
-            type="text"
+            // type="text"
+            type='password'
             onChange={formik.handleChange}
             value={formik.values.passwordTwo}
           />
 
-          <button type="submit">Submit</button>
+          <button className={MainStyles.button} type="submit">Submit</button>
 
           {/* {error && <p>{error.message}</p>} */}
         </form>

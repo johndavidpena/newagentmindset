@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import { useUser } from '../../context/userContext';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import MemberLayout from '../../components/MemberLayout';
-import PostStyles from '../../stylesheets/Post.module.css';
+import ResourceStyles from '../../stylesheets/Resources.module.css';
 import MainStyles from '../../stylesheets/Main.module.css';
+import ResourceNeeds from '../../components/Forms/ResourceNeeds';
 
 export default () => {
   const { loadingUser, user } = useUser();
@@ -44,11 +45,13 @@ export default () => {
         />
 
         <div>
-          <h1 className={PostStyles.title1}>resources
-         {/* <span aria-hidden="true" className={PostStyles.title2}>&nbsp;why</span> */}
+          <h1 className={MainStyles.title1}>new agent resource hub
+         {/* <span aria-hidden="true" className={ResourceStyles.title2}>&nbsp;why</span> */}
           </h1>
 
-          <p>RESOURCES HERE</p>
+          <p>Welcome new agents, what do you need?</p>
+
+          <ResourceNeeds />
         </div>
       </>
     )} />

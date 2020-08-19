@@ -1,10 +1,10 @@
-import FormStyles from './Form.module.css';
+import MainStyles from '../../stylesheets/Main.module.css';
 import firebase from '../../firebase/clientApp';
 import Router from 'next/router';
 
 const SignOut = () => (
   <button
-    className={FormStyles.signoutButton}
+    className={MainStyles.blueButton}
     type="button"
     onClick={() => {
       firebase.auth().signOut();

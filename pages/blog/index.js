@@ -5,7 +5,7 @@ import { useUser } from '../../context/userContext';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import GuestLayout from '../../components/GuestLayout';
 import MemberLayout from '../../components/MemberLayout';
-import PostStyles from '../../stylesheets/Post.module.css';
+import BlogStyles from '../../stylesheets/Blog.module.css';
 import MainStyles from '../../stylesheets/Main.module.css';
 
 export default () => {
@@ -46,11 +46,11 @@ export default () => {
       {!user &&
         <GuestLayout content={(
           <div>
-            <h1 className={PostStyles.title1}>blog
+            <h1 className={MainStyles.title1}>blog
             {/* <span aria-hidden="true" className={PostStyles.title2}>&nbsp;why</span> */}
             </h1>
 
-            <p>POST 1 HERE</p>
+            <p>Coming Soon!</p>
           </div>
         )} />
       }
@@ -58,11 +58,11 @@ export default () => {
       {user &&
         <MemberLayout content={(
           <div>
-            <h1 className={PostStyles.title1}>blog
+            <h1 className={MainStyles.title1}>blog
          {/* <span aria-hidden="true" className={PostStyles.title2}>&nbsp;why</span> */}
             </h1>
 
-            <p>POST 1 HERE</p>
+            <p>Coming Soon!</p>
           </div>
         )} />
       }

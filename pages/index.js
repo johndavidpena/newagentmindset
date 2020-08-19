@@ -45,7 +45,7 @@ export default () => {
   return (
     <>
       <Head>
-        <title>New Agent Mindset</title>
+        <title>New Agent Mindset | Welcome New Real Estate Agents</title>
       </Head>
 
       <NextSeo
@@ -57,7 +57,7 @@ export default () => {
       {!user &&
         <GuestLayout content={(
           <>
-            <h1 className={IndexStyles.title1}>new agent<span aria-hidden="true" className={IndexStyles.title2}>&nbsp;mindset</span>
+            <h1 className={MainStyles.title1}>new agent<span aria-hidden="true" className={MainStyles.title2}>&nbsp;mindset</span>
             </h1>
 
             <a className={IndexStyles.RSS} href='https://open.spotify.com/show/7HlrM794Sbe2ME4kYAAUOZ' target='_blank'>Check out the podcast on Spotify</a>
@@ -119,7 +119,7 @@ export default () => {
       {user &&
         <MemberLayout content={(
           <>
-            <h1 className={IndexStyles.title1}>new agent<span aria-hidden="true" className={IndexStyles.title2}>&nbsp;mindset</span>
+            <h1 className={MainStyles.title1}>new agent<span aria-hidden="true" className={MainStyles.title2}>&nbsp;mindset</span>
             </h1>
 
             <a className={IndexStyles.RSS} href='https://open.spotify.com/show/7HlrM794Sbe2ME4kYAAUOZ' target='_blank'>Check out the podcast on Spotify</a>
@@ -170,9 +170,6 @@ export default () => {
               <button className={MainStyles.button}>
                 Begin<span className={IndexStyles.arrow}>&nbsp;&#10516;</span></button>
             </Link>
-
-            <br />
-            <br />
 
             <SignOut />
 

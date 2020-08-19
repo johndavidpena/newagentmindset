@@ -17,36 +17,24 @@
   margin: 0 1rem 1rem 1rem;
 }
 
-.wrapper {
-  margin: var(--obj-margin-mobile);
-  width: 288px;
-  background-color: var(--white);
-  border-radius: var(--border-radius);
+/* Titles and headings */
+.title1,
+.title2 {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--off-white);
 }
 @media (min-width: 640px) {
-  .wrapper {
-    width: 400px;
-  }
-}
-@media (min-width: 768px) {
-  .wrapper {
-      width: 500px;
+  .title1,
+  .title2 {
+    font-size: 4rem;
   }
 }
 
-.topImageWrapper {
-  margin: var(--topObj-margin-mobile);
-}
-
-.imageWrapper {
-  margin: var(--obj-margin-mobile);
-}
-
-.credit {
-  color: var(--text-normal);
-  font-size: var(--font-smallest);
-  text-align: end;
-  padding: 0 !important;
+.title2 {
+  color: var(--rhone-orange);
 }
 
 .stat {
@@ -54,6 +42,7 @@
   font-size: var(--font-smaller);
 }
 
+/* Button styles */
 .button {
   appearance: none;
   outline: 0;
@@ -66,7 +55,24 @@
   cursor: pointer;
   font-size: 18px;
   transition-duration: 0.25s;
-  margin: 8px auto;
+  margin: 2rem auto;
+  display: block;
+  text-decoration: none;
+}
+
+.blueButton {
+  appearance: none;
+  outline: 0;
+  background-color: var(--blue);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  color: var(--grey-050);
+  width: 225px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  margin: 2rem auto;
   display: block;
   text-decoration: none;
 }
@@ -92,3 +98,19 @@
   width: 100%;
   position: absolute;
 }
+
+/* Using these? */
+/* .topImageWrapper {
+  margin: var(--topObj-margin-mobile);
+}
+
+.imageWrapper {
+  margin: var(--obj-margin-mobile);
+}
+
+.credit {
+  color: var(--text-normal);
+  font-size: var(--font-smallest);
+  text-align: end;
+  padding: 0 !important;
+} */
