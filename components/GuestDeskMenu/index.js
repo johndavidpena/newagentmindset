@@ -6,8 +6,7 @@ const GuestDeskMenu = () => (
     <div className={NavStyles.nameContainer}>
       <div className={NavStyles.deskLinkContainer}>
         <Link href='/blog/'>
-          <a className={NavStyles.deskLink}
-            onClick={() => setOpen(!open)}>blog</a>
+          <a className={NavStyles.deskLink}>blog</a>
         </Link>
       </div>
 
