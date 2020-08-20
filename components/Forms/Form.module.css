@@ -152,6 +152,11 @@
   }
 }
 
+.forgot {
+  color: var(--blue);
+  cursor: pointer;
+}
+
 .errors {
   font-size: var(--font-smallest);
   color: red;

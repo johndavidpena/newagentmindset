@@ -1,8 +1,7 @@
-import MainStyles from '../../stylesheets/Main.module.css';
-import FormStyles from './Form.module.css';
+import MainStyles from '../stylesheets/Main.module.css';
+import FormStyles from '../components/Forms/Form.module.css';
+import firebase from '../firebase/clientApp';
 import { useFormik } from 'formik';
-import firebase from '../../firebase/clientApp';
-import Link from 'next/link';
 import Router from 'next/router';
 
 const validate = values => {
@@ -17,19 +16,18 @@ const validate = values => {
   return errors;
 };
 
-const SignIn = () => {
+const PasswordReset = () => {
   const formik = useFormik({
     initialValues: {
       email: '',
-      password: '',
       // error: null
     },
     validate,
     onSubmit: async (values) => {
-      await firebase.auth().signInWithEmailAndPassword(values.email, values.password)
+      await firebase.auth().sendPasswordResetEmail(values.email)
         .then(() => {
-          console.log('Signed In');
-          Router.push('/start-with-why');
+          console.log('Password reset');
+          Router.push('/');
         })
         .catch(error => {
           console.log('onSubmit error: ', error);
@@ -40,14 +38,14 @@ const SignIn = () => {
   return (
     <div className={FormStyles.formWrapper}>
       <div className={FormStyles.container}>
-        <h1>Sign In</h1>
+        <h1>Reset Password</h1>
         <form onSubmit={formik.handleSubmit} className={FormStyles.form}>
           {formik.touched.email && formik.errors.email ? (
             <div><p className={FormStyles.errors}>{formik.errors.email}</p></div>
           ) : null}
           <input
             className={FormStyles.input}
-            id="email"
+            id="resetEmail"
             name="email"
             placeholder="Email"
             type="email"
@@ -55,20 +53,6 @@ const SignIn = () => {
             onBlur={formik.handleBlur}
             value={formik.values.email}
           />
-          <input
-            className={FormStyles.input}
-            id="password"
-            name="password"
-            placeholder="Password"
-            // type="text"
-            type='password'
-            onChange={formik.handleChange}
-            value={formik.values.password}
-          />
-
-          <Link href='/reset-password'>
-            <p className={FormStyles.forgot}>Forgot password?</p>
-          </Link>
 
           <button className={MainStyles.button} type="submit">Submit</button>
 
@@ -79,4 +63,4 @@ const SignIn = () => {
   );
 }
 
-export default SignIn;
+export default PasswordReset;
