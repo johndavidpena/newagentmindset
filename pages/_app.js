@@ -1,4 +1,5 @@
-import Router from 'next/router'
+import Router from 'next/router';
+import Layout from '../components/Layout';
 import UserProvider from '../context/userContext';
 import * as gtag from '../utils/gtag';
 import * as Sentry from '@sentry/browser';
@@ -11,13 +12,14 @@ export default function MyApp({ Component, pageProps }) {
   Router.events.on('routeChangeComplete', url => gtag.pageview(url));
 
   return (
-    <>
-      <DefaultSeo {...SEO} />
+    <Layout content={(
+      <>
+        <DefaultSeo {...SEO} />
 
-      <UserProvider>
-        <Component {...pageProps} />
-      </UserProvider>
-      <style jsx global>{`
+        <UserProvider>
+          <Component {...pageProps} />
+        </UserProvider>
+        <style jsx global>{`
         {/* Breakpoints from https://flaviocopes.com/css-breakpoints/
         mobile portrait: less than 640px
         mobile landscape: > 640px
@@ -38,15 +40,6 @@ export default function MyApp({ Component, pageProps }) {
           {/* src: url('../public/AvenirNext.ttc') format('truetype'); */}
           src: url(../AvenirNext.ttc);
           font-display: swap;
-        }
-
-        @font-face {
-          font-family: 'Marvin';
-          font-weight: bold;
-          src:
-          local('Marvin'),
-          local('MarvinVisions-Bold'),
-          url(../fonts/MarvinVisions-Bold.otf);
         }
 
         :root {
@@ -80,7 +73,7 @@ export default function MyApp({ Component, pageProps }) {
 
           --font-smallest: 0.75rem;
           --font-smaller: 1rem;
-          --font-size: 1.15rem;
+          --font-size: 1.2rem;
           --font-larger: 1.3rem;
           --font-largest: 1.5rem;
 
@@ -301,6 +294,7 @@ export default function MyApp({ Component, pageProps }) {
           display: none;
         }
       `}</style>
-    </>
+      </>
+    )} />
   );
 }

@@ -37,7 +37,7 @@
 	text-align: center;
 }
 
-.container h1 {
+.container p {
   font-size: 40px;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;

@@ -1,4 +1,4 @@
-import MainStyles from '../stylesheets/Main.module.css';
+import MainStyles from '../../stylesheets/Main.module.css';
 import FormStyles from './Form.module.css';
 import { useFormik } from 'formik';
 import firebase from '../../firebase/clientApp';
