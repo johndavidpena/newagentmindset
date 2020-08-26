@@ -43,6 +43,8 @@ export default function MyApp({ Component, pageProps }) {
         }
 
         :root {
+          --text-darkest: hsl(0, 0%, 19%);
+          --text-darker: hsl(0, 0%, 31%);
           --text-dark: hsl(0, 0%, 49%);
           --text-normal: hsl(0, 0%, 69%);
           --text-light: hsl(0, 0%, 81%);

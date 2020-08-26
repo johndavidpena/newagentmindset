@@ -26,7 +26,7 @@ const validate = values => {
   return errors;
 };
 
-const BasicEmail = () => {
+const BasicEmail = props => {
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -54,7 +54,7 @@ const BasicEmail = () => {
   return (
     <div className={FormStyles.formWrapper}>
       <div className={FormStyles.container}>
-        <p>Sign Up with Email</p>
+        <p className={FormStyles.heading}>{props.heading}</p>
         <form onSubmit={formik.handleSubmit} className={FormStyles.form}>
           {formik.touched.firstName && formik.errors.firstName ? (
             <div><p className={FormStyles.errors}>{formik.errors.firstName}</p></div>

@@ -1,15 +1,16 @@
-import Link from 'next/link';
+// import Link from 'next/link';
+import Link from './Link';
 import NavStyles from '../stylesheets/Navigation.module.css';
 
 const DeskMenu = () => (
   <div>
     <div className={NavStyles.nameContainer}>
       <div className={NavStyles.deskLinkContainer}>
-        <Link href='/blog/'>
+        <Link href='/blog/index'>
           <a className={NavStyles.deskLink}>blog</a>
         </Link>
 
-        <Link href='/resources/'>
+        <Link href='/resources/index'>
           <a className={NavStyles.deskLink}>resources</a>
         </Link>
       </div>

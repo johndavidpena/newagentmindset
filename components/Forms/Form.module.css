@@ -37,12 +37,12 @@
 	text-align: center;
 }
 
-.container p {
+.heading {
   font-size: 40px;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
   /* font-weight: 200; */
-  color: var(--text-dark);
+  color: var(--text-darker);
 }
 
 .form {

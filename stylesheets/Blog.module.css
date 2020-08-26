@@ -1,0 +1,123 @@
+.blog h1 {
+  text-align: center;
+}
+
+.card {
+  max-width: 552px;
+  border-radius: var(--border-radius);
+  margin: 2rem auto;
+  padding: 8px;
+  background: var(--grey-100);
+  box-shadow: var(--box-shadow-more);
+  cursor: pointer;
+}
+@media (max-width: 724px) {
+  .card {
+    margin: 2rem 1rem;
+  }
+}
+
+.card span,
+.card h3,
+.card p {
+  color: var(--text-darker);
+}
+
+.card h2 {
+  color: var(--text-darkest);
+  font-size: var(--font-larger);
+  font-weight: bold;
+}
+
+.card h3:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    width: 80%; /* Change this to whatever width you want. */
+    padding-top: 8px;
+    border-bottom: 1px solid var(--grey-300);
+}
+
+.card p {
+  font-size: var(--font-smaller);
+}
+
+/* Post styles */
+/* .post {
+  max-width: 744px;
+  margin: 0 auto;
+}
+@media (max-width: 744px) {
+  .post h1,
+  .post span,
+  .post p {
+    margin: 1rem;
+  }
+} */
+
+.photoCredit {
+  color: var(--text-light);
+  font-size: var(--font-smallest);
+  padding: 0 0 8px 0 !important;
+}
+
+/* Info card styles */
+.infoCardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .infoCardGrid {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+}
+.infoCard1 {
+  border-radius: var(--border-radius);
+  margin: 1rem auto;
+  padding: 8px;
+  background: var(--grey-100);
+  box-shadow: var(--box-shadow-more);
+}
+.infoCard1 h4 {
+  color: var(--text-darkest);
+  font-size: var(--font-larger);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rhone-green);
+}
+.infoCard1 h4 span {
+  color: var(--blue);
+  font-size: var(--font-smaller);
+  vertical-align: text-top;
+}
+.infoCard1 p {
+  color: var(--text-darker);
+  font-size: var(--font-smaller);
+}
+
+/* For really tall images */
+.verticalImage {
+  object-fit: cover;
+  height: 595px;
+}
+
+/* .postTitle h1 {
+  padding: 8px;
+  font-size: var(--font-larger);
+  font-weight: bold;
+  text-align: start;
+}
+
+.postTitle span {
+  font-weight: bold;
+  font-size: var(--font-smaller);
+}
+
+.postTitle h1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 8px;
+    border-bottom: 1px solid var(--grey-300);
+} */

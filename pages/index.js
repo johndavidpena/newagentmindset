@@ -88,7 +88,7 @@ export default () => {
           Begin<span className={IndexStyles.arrow}>&nbsp;&#10516;</span></button>
       </Link>
 
-      <BasicEmail />
+      <BasicEmail heading='Sign Up' />
 
       <br />
       <br />

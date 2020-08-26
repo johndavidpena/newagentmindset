@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../hooks/useWindowSize';
@@ -32,12 +33,19 @@ export default () => {
         canonical='https://newagentmindset.com/blog/index/'
       />
 
-      <div>
-        <h1 className={MainStyles.title1}>blog
-         {/* <span aria-hidden="true" className={PostStyles.title2}>&nbsp;why</span> */}
-        </h1>
+      <div className={BlogStyles.blog}>
 
-        <p>Coming Soon!</p>
+        <Link href='/blog/posts/getting-started-lead-gen'>
+          <div className={BlogStyles.card}>
+            <span>August 28, 2020</span>
+            <h2>Getting Started with Lead Gen</h2>
+
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1598452943/New%20Agent%20Mindset/lead-gen-two-women-m.jpg' alt='lead-gen-two-women' title='lead-gen-two-women' />
+
+            <h3>How to Get Started with Lead Gen</h3>
+            <p>Lead generation, sometimes referred to as prospecting, is a key part of every real estate agents life. Without leads, you've got nothing...</p>
+          </div>
+        </Link>
       </div>
 
     </>
