@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import MainStyles from '../../stylesheets/Main.module.css';
 import FormStyles from './Form.module.css';
 import { useFormik } from 'formik';
@@ -27,6 +28,8 @@ const validate = values => {
 };
 
 const BasicEmail = props => {
+  const [submitted, setSubmitted] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -43,7 +46,7 @@ const BasicEmail = props => {
       })
         .then(() => {
           console.log('Submitted');
-          // Router.push('/members');
+          setSubmitted(true);
         })
         .catch(error => {
           console.log('Error onSubmit', error);
@@ -54,52 +57,60 @@ const BasicEmail = props => {
   return (
     <div className={FormStyles.formWrapper}>
       <div className={FormStyles.container}>
-        <p className={FormStyles.heading}>{props.heading}</p>
-        <form onSubmit={formik.handleSubmit} className={FormStyles.form}>
-          {formik.touched.firstName && formik.errors.firstName ? (
-            <div><p className={FormStyles.errors}>{formik.errors.firstName}</p></div>
-          ) : null}
-          <input
-            className={FormStyles.input}
-            id="firstName"
-            name="firstName"
-            placeholder="First name"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.firstName}
-          />
-          {formik.touched.lastName && formik.errors.lastName ? (
-            <div><p className={FormStyles.errors}>{formik.errors.lastName}</p></div>
-          ) : null}
-          <input
-            className={FormStyles.input}
-            id="lastName"
-            name="lastName"
-            placeholder="Last name"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.lastName}
-          />
-          {formik.touched.email && formik.errors.email ? (
-            <div><p className={FormStyles.errors}>{formik.errors.email}</p></div>
-          ) : null}
-          <input
-            className={FormStyles.input}
-            id="email"
-            name="email"
-            placeholder="Email"
-            type="email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-          />
+        {!submitted && (
+          <>
+            <p className={FormStyles.heading}>{props.heading}</p>
+            <form onSubmit={formik.handleSubmit} className={FormStyles.form}>
+              {formik.touched.firstName && formik.errors.firstName ? (
+                <div><p className={FormStyles.errors}>{formik.errors.firstName}</p></div>
+              ) : null}
+              <input
+                className={FormStyles.input}
+                id="firstName"
+                name="firstName"
+                placeholder="First name"
+                type="text"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.firstName}
+              />
+              {formik.touched.lastName && formik.errors.lastName ? (
+                <div><p className={FormStyles.errors}>{formik.errors.lastName}</p></div>
+              ) : null}
+              <input
+                className={FormStyles.input}
+                id="lastName"
+                name="lastName"
+                placeholder="Last name"
+                type="text"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.lastName}
+              />
+              {formik.touched.email && formik.errors.email ? (
+                <div><p className={FormStyles.errors}>{formik.errors.email}</p></div>
+              ) : null}
+              <input
+                className={FormStyles.input}
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
+              />
 
-          <button className={MainStyles.button} type="submit">Submit</button>
+              <button className={MainStyles.button} type="submit">Submit</button>
 
-          {/* {error && <p>{error.message}</p>} */}
-        </form>
+              {/* {error && <p>{error.message}</p>} */}
+            </form>
+          </>
+        )}
+
+        {submitted && (
+          <p className={FormStyles.heading}>Thank You!</p>
+        )}
       </div>
     </div>
   );

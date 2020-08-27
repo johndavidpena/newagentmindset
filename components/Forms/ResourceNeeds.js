@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import MainStyles from '../../stylesheets/Main.module.css';
 import FormStyles from './Form.module.css';
 import { useFormik } from 'formik';
@@ -15,7 +15,9 @@ const validate = values => {
 };
 
 const ResourceNeeds = () => {
-  const [confirmSubmit, setConfirmSubmit] = useState(false);
+  const textArea = React.useRef();
+
+  const [submitted, setSubmitted] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -28,9 +30,9 @@ const ResourceNeeds = () => {
         resourceNeeds: values.resourceNeeds
       })
         .then(() => {
-          console.log('Submitted resourceNeeds form');
-          setConfirmSubmit(true);
-
+          // console.log('Submitted resourceNeeds form');
+          console.log(textArea.current.value);
+          setSubmitted(true);
         })
         .catch(error => {
           console.log('onSubmit error: ', error);
@@ -40,27 +42,30 @@ const ResourceNeeds = () => {
 
   return (
     <div className={FormStyles.textareaWrapper}>
-      <form onSubmit={formik.handleSubmit} className={FormStyles.textareaForm}>
-        <textarea
-          className={FormStyles.textarea}
-          id='resourceNeeds'
-          name='resourceNeeds'
-          placeholder="I need..."
-          type="text"
-          onChange={formik.handleChange}
-          value={formik.values.resourceNeeds}
-        />
+      {!submitted && (
+        <form onSubmit={formik.handleSubmit} className={FormStyles.textareaForm}>
+          <textarea
+            ref={textArea}
+            className={FormStyles.textarea}
+            id='resourceNeeds'
+            name='resourceNeeds'
+            placeholder="I need..."
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.resourceNeeds}
+          />
 
-        <button className={MainStyles.button} type="submit">Submit</button>
+          <button className={MainStyles.button} type="submit">Submit</button>
 
-        {/* {error && <p>{error.message}</p>} */}
+          {/* {error && <p>{error.message}</p>} */}
+        </form>
+      )}
 
-        {confirmSubmit && (
-          <div className={FormStyles.textareaConfirm}>
-            <p>Got it!</p>
-          </div>
-        )}
-      </form>
+      {submitted && (
+        <div className={FormStyles.textareaConfirm}>
+          <p>Got it!</p>
+        </div>
+      )}
     </div>
   );
 }
