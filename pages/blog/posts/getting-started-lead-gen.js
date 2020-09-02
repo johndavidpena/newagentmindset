@@ -14,9 +14,11 @@ export default () => {
   const [screenSize, setScreenSize] = useState('');
 
   useEffect(() => {
-    if (width <= 640) {
+    if (width <= 576) {
       setScreenSize('mobile');
-    } else if (width > 640) {
+    } else if (width > 576 && width <= 768) {
+      setScreenSize('tablet');
+    } else if (width > 768) {
       setScreenSize('desktop');
     }
     return () => { };
@@ -25,13 +27,13 @@ export default () => {
   return (
     <>
       <Head>
-        <title>New Agent Mindset | Getting Started with Lead Gen</title>
+        <title>New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset</title>
       </Head>
 
       <NextSeo
-        title='New Agent Mindset | Getting Started with Lead Gen'
-        description='New Agent Mindset | Getting Started with Lead Gen'
-        canonical='https://newagentmindset.com/getting-started-lead-gen/'
+        title='New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset'
+        description='New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset'
+        canonical='https://newagentmindset.com/blog/posts/getting-started-lead-gen/'
       />
 
       <div>
@@ -42,11 +44,15 @@ export default () => {
         <p>Lead generation, or lead gen, is the practice of finding clients. Typically, buyers, sellers, or investors that are ready, willing, and able to act. As a new real estate agent, this can be a daunting process because it's something completely new for most agents, and there are SO many options to try.</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1598452943/New%20Agent%20Mindset/lead-gen-two-women-m.jpg' alt='lead-gen-two-women' title='lead-gen-two-women' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599076399/New%20Agent%20Mindset/Blog%20Images/lead-gen-two-women-m400.jpg' alt='lead-gen-two-women' title='lead-gen-two-women' />
+        )}
+
+        {screenSize === 'tablet' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599077329/New%20Agent%20Mindset/Blog%20Images/lead-gen-two-women-t640.jpg' alt='lead-gen-two-women' title='lead-gen-two-women' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1598452930/New%20Agent%20Mindset/lead-gen-two-women-d.jpg' alt='lead-gen-two-women' title='lead-gen-two-women' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599077522/New%20Agent%20Mindset/Blog%20Images/lead-gen-two-women-d770.jpg' alt='lead-gen-two-women' title='lead-gen-two-women' />
         )}
 
         <p className={BlogStyles.photoCredit}>Photo by Amy Hirschi</p>
@@ -123,11 +129,15 @@ export default () => {
         <p>Marketing-based or marketing-enhanced lead gen involves YOU spending money on things like advertising, direct mail, broadcast spends, and the like. The good thing about prospecting-based lead gen is that it is free and requires only your time and energy.</p>
 
         {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1598285529/New%20Agent%20Mindset/lead-generation-m.jpg' alt='lead-generation-guy' title='lead-generation-guy' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599077824/New%20Agent%20Mindset/Blog%20Images/lead-generation-guy-m400.jpg' alt='lead-generation-guy' title='lead-generation-guy' />
+        )}
+
+        {screenSize === 'tablet' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599077824/New%20Agent%20Mindset/Blog%20Images/lead-generation-guy-t640.jpg' alt='lead-generation-guy' title='lead-generation-guy' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1598285529/New%20Agent%20Mindset/lead-generation-d.jpg' alt='lead-generation-guy' title='lead-generation-guy' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599077817/New%20Agent%20Mindset/Blog%20Images/lead-generation-guy-d770.jpg' alt='lead-generation-guy' title='lead-generation-guy' />
         )}
 
         <p className={BlogStyles.photoCredit}>Photo by Joseph Frank</p>

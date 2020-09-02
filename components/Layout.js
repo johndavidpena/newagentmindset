@@ -14,9 +14,9 @@ export default props => {
   const [menu, setMenu] = useState('');
 
   useEffect(() => {
-    if (width <= 768) {
+    if (width <= 640) {
       setMenu('mobile');
-    } else if (width > 768) {
+    } else if (width > 640) {
       setMenu('desktop');
     }
     return () => { };

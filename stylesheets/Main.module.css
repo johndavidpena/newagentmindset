@@ -1,20 +1,41 @@
+/* MOBILE FIRST */
 .pageGrid {
   display: grid;
   grid-template-rows: auto 1fr;
 
   min-height: 100vh;
-  max-width: 800px;
-}
-
-@media (min-width: 768px) {
-  .pageGrid {
-    margin: 0 auto 1.5rem auto;
-  }
 }
 
 .page {
-  max-width: 800px;
-  margin: 0 1rem 1rem 1rem;
+  max-width: 540px;
+  margin: 1rem;
+}
+@media (min-width: 576px) {
+  .page {
+    margin: 1rem auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .page {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .page {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .page {
+    max-width: 1140px;
+  }
+}
+
+.pAnchor {
+  color: var(--blue);
+  cursor: pointer;
 }
 
 /* Titles and headings */
@@ -28,6 +49,21 @@
 }
 @media (min-width: 640px) {
   .title1,
+  .title2 {
+    font-size: 4rem;
+  }
+}
+.title1centered,
+.title2 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--off-white);
+}
+@media (min-width: 640px) {
+  .title1centered,
   .title2 {
     font-size: 4rem;
   }
@@ -111,4 +147,13 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+/* Podcast styles */
+.podcastContainer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.podcastContainer iframe {
 }

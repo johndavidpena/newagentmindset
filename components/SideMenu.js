@@ -18,11 +18,15 @@ const SideMenu = ({ open, setOpen }) => {
         <a onClick={() => setOpen(!open)}>Home</a>
       </Link>
 
-      <Link href='/blog/'>
+      <Link href='/blog'>
         <a onClick={() => setOpen(!open)}>Blog</a>
       </Link>
 
-      <Link href='/resources/'>
+      <Link href='/episodes'>
+        <a onClick={() => setOpen(!open)}>Episodes</a>
+      </Link>
+
+      <Link href='/resources'>
         <a onClick={() => setOpen(!open)}>Resources</a>
       </Link>
     </div>

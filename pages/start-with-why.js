@@ -12,9 +12,11 @@ export default () => {
   const [screenSize, setScreenSize] = useState('');
 
   useEffect(() => {
-    if (width <= 640) {
+    if (width <= 576) {
       setScreenSize('mobile');
-    } else if (width > 640) {
+    } else if (width > 576 && width <= 768) {
+      setScreenSize('tablet');
+    } else if (width > 768) {
       setScreenSize('desktop');
     }
     return () => { };
@@ -28,7 +30,7 @@ export default () => {
 
       <NextSeo
         title='New Agent Mindset | Start with WHY'
-        description='New Agent Mindset | Start with WHY'
+        description='New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new realtors find success! This page speaks to the importance of every agent figuring out their big WHY.'
         canonical='https://newagentmindset.com/start-with-why/'
       />
 
@@ -42,6 +44,10 @@ export default () => {
         <p>Now, when you say it that way, it doesn't sound great, does it? So, WHY? Why did you choose this career for yourself?</p>
 
         {screenSize === 'mobile' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078519/New%20Agent%20Mindset/start-whith-why-m400.jpg' alt='start-with-why' title='start-with-why' />
+        )}
+
+        {screenSize === 'tablet' && (
           <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532499/New%20Agent%20Mindset/start-whith-why-m.jpg' alt='start-with-why' title='start-with-why' />
         )}
 
@@ -56,6 +62,10 @@ export default () => {
         <p>Now, I can't take credit for this line of questioning because 'start with WHY' is all over place right now, from books to podcasts to everything. It's no wonder that it seems to be the go-to advice now because there are so many shiny objects out there to chase - so many WHAT's and HOW's.</p>
 
         {screenSize === 'mobile' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078614/New%20Agent%20Mindset/focus-on-why-m400.jpg' alt='focus-on-why' title='focus-on-why' />
+        )}
+
+        {screenSize === 'tablet' && (
           <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-m.jpg' alt='focus-on-why' title='focus-on-why' />
         )}
 
@@ -76,11 +86,15 @@ export default () => {
         <p>There's really no shortage of 'bad day' scenarios here. We have all had them and even the best agents lose commissions and deals. These are the dark moments when you need a powerful enough WHY to help you pick up the pieces and keep going. Every agent's WHY needs to be in place!</p>
 
         {screenSize === 'mobile' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078727/New%20Agent%20Mindset/aim-for-stars-m400.jpg' alt='aim-for-stars' title='aim-for-stars' />
+        )}
+
+        {screenSize === 'tablet' && (
           <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532773/New%20Agent%20Mindset/aim-for-stars-m.jpg' alt='aim-for-stars' title='aim-for-stars' />
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532773/New%20Agent%20Mindset/aim-for-stars-d.jpg' alt='aim-for-stars' title='aim-for-stars' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078726/New%20Agent%20Mindset/aim-for-stars-d770.jpg' alt='aim-for-stars' title='aim-for-stars' />
         )}
 
         <p>So, what's my WHY? Well, after a lot of thought and contemplation, this is my WHY. I've always believed that everything/anything is possible, including my potential as a human being. The only thing that limits me, is ME. Life is short, so my WHY is "to be more, to realize my full potential, to reach for the stars."</p>

@@ -48,6 +48,7 @@ export default function MyApp({ Component, pageProps }) {
           --text-dark: hsl(0, 0%, 49%);
           --text-normal: hsl(0, 0%, 69%);
           --text-light: hsl(0, 0%, 81%);
+          --text-lighter: hsl(0, 0%, 92%);
 
           --white: hsl(0, 0%, 100%);
           --off-white: hsl(0, 0%, 99%);
@@ -55,6 +56,9 @@ export default function MyApp({ Component, pageProps }) {
           --rhone-orange: #FF6822;
           --rhone-green: #3AD771;
           --blue: #228AFF;
+
+          --buyer-green: #005D82;
+          --buyer-green-light: #D5F7F7;
 
           --grey-050: #F7F7F7;
           --grey-100: #E1E1E1;
