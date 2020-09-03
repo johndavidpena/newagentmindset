@@ -37,7 +37,7 @@ export default () => {
 
       <div className={BlogStyles.blog}>
 
-        {/* <Link href='/blog/posts/truth-real-estate-agent'>
+        <Link href='/blog/posts/truth-real-estate-agent'>
           <div className={BlogStyles.card}>
             <span>September 2, 2020</span>
             <h2>The Truth About Being a Real Estate Agent</h2>
@@ -47,7 +47,7 @@ export default () => {
             <h3>New Real Estate Agent Misconceptions</h3>
             <p>As a new real estate agent, there are a lot of misconceptions and myths out there that you'll want to know about. This post is all about the truth about being a real estate agent.</p>
           </div>
-        </Link> */}
+        </Link>
 
         <Link href='/blog/posts/getting-started-lead-gen'>
           <div className={BlogStyles.card}>

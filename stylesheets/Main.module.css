@@ -73,6 +73,15 @@
   color: var(--rhone-orange);
 }
 
+.title3 {
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .title3 {
+    font-size: 2.5rem;
+  }
+}
 .stat {
   color: var(--rhone-green);
   font-size: var(--font-smaller);
