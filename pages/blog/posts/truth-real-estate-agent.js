@@ -70,7 +70,7 @@ export default () => {
 
         <p>The idea that a buyer client is going to look at 3 different properties and then buy one, is absolutely inaccurate. People are picky, especially when it comes to the biggest financial decisions of their lives. Since most new real estate agents pay their dues by working with buyers, you should expect to show those buyers a LOT of homes.</p>
 
-        <p>Additionally, you rarely see or hear about any financial or monetary hiccups that might happen during a transaction on HGTV. Why, because most of the buyers and sellers are pre-screened and have been deemed solid financial participants. It wouldn't make for a very good episode if the closing fell apart at the last minute and both parties were frustrated and upset. But, this is EXACTLY what can happen in the real world. Deals fall apart all the time for a variety of reasons, some in your control but many not. This is the truth about being a real estate agent - things will go south sometimes and life isn't like a TV shoW!</p>
+        <p>Additionally, you rarely see or hear about any financial or monetary hiccups that might happen during a transaction on HGTV. Why, because most of the buyers and sellers are pre-screened and have been deemed solid financial participants. It wouldn't make for a very good episode if the closing fell apart at the last minute and both parties were frustrated and upset. But, this is EXACTLY what can happen in the real world. Deals fall apart all the time for a variety of reasons, some in your control but many not. This is the truth about being a real estate agent - things will go south sometimes and life isn't like a TV show!</p>
 
         {screenSize === 'mobile' && (
           <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599085004/New%20Agent%20Mindset/Blog%20Images/fake-fact-m400.jpg' alt='fact-vs-fake' title='fact-vs-fake' />
@@ -93,15 +93,58 @@ export default () => {
 
         <BasicEmail heading='Avoid Mistakes' />
 
-        <h2 className={MainStyles.title3}>#4 Continuing Education Requirements</h2>
-        <p></p>
+        <h2 className={MainStyles.title3}>#4 Education Never Stops</h2>
+        <p>In Texas, at least, you have to take 6 real estate courses and pass an exam before you can get your real estate license. These courses are pretty lengthy and cover a wide range of topics from legal contracts to the ins and outs of agency to fiduciary duties. It took me a couple of months to get through all of the courses and about $500. It is possible to complete the courses in a shorter amount of time and the cost varies.</p>
+
+        <p>Those 6 courses are really just the beginning of your education. Every couple of years you will need to complete a number of continuing education courses in order to keep your license up to date and in good standing. Whereas the first 6 courses you take are not optional, you do typically get to choose the continuing ed courses you take. Choices range from courses about legal updates, to working short sales, to marketing, to selling commercial.</p>
+
+        <p>These education courses are required in most states and non-negotiable. In addition to these required classes, chances are you are going to need to seek out answers to the questions and obstacles that start to show up in your business. There is no shortage of real estate instruction out there, some of it free and much of it paid. Many new real estate agents will find a great deal of helpful training at their broker while many will consider hiring a coach or mentor. Just make sure that you don't kid yourself and think that once you get your license, that's the end of your learning.</p>
 
         <h2 className={MainStyles.title3}>#5 Save money first</h2>
-        <p></p>
+        <p>This one is HUGE! The fact of the matter is that as a new real estate agent, you probably won't make any money for at least 3 - 6 months. Instead, you will pay money to join a broker since most have an initial setup fee. You will also most likely pay a monthly fee to the broker for technology, errors and omissions insurance, and whatever other fees they might charge. Finally, you will pay a fee to your local real estate association for membership and use of the local MLS. (These fees vary by state and broker of course.)</p>
+
+        <p>So, you already paid upwards of $500 to take the licensing courses and exams and now you're putting out anywhere from $500 to $2,000 to get started with a broker and the local real estate association! And don't forget that you'll need to get business cards, some professional head shots, marketing materials, appropriate attire, etc. The startup expenses for new real estate agents can easily be in the thousands of dollars.</p>
+
+        <p>Best case scenario is that you've already managed to line up a client as soon as you get started. This is NOT the norm! If you happen to be that lucky then you are still about 30 - 60 days from getting paid since we know that most transactions from accepted contract to close takes approximately 45 days. So the absolute best case scenario is that you need to have saved up enough money to cover your startup fees and living expenses (mortgage/rent, groceries, utilities, etc) to last about 2 months.</p>
+
+        <p>For the rest of us, it's much more realistic that you won't see your first commission check for about 6 months. Ideally, you will have enough money saved for at least 6 months so that you can focus on real estate full time without stressing about money. Many agents end up having to get a part time job which isn't ideal because you really want to be able to commit to the work full time, but, desperate times call for desperate measures.</p>
+
+        <p>Unfortunately, some agents can't make it to that first commission and end up going back to a job or career they hate. Perhaps they'll return to real estate after they get back on their feet financially, but maybe not. Sometimes it's just easier to settle for the steady paycheck than work hard for something that's harder than one initially thought. Regardless, if you don't have a way to support yourself in the first 6 months (for some, it might even take longer), there's a good chance that you're going to be miserable, stressed out, and end up dropping out of the indusrty altogether.</p>
+
+        {screenSize === 'mobile' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599141990/New%20Agent%20Mindset/Blog%20Images/save-your-money-m400.jpg' alt='save-your-money' title='save-your-money' />
+        )}
+
+        {screenSize === 'tablet' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599141991/New%20Agent%20Mindset/Blog%20Images/save-your-money-t640.jpg' alt='save-your-money' title='save-your-money' />
+        )}
+
+        {screenSize === 'desktop' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599141991/New%20Agent%20Mindset/Blog%20Images/save-your-money-d770.jpg' alt='save-your-money' title='save-your-money' />
+        )}
 
         <h2 className={MainStyles.title3}>#6 Mindset and Consistency</h2>
-        <p></p>
+        <p>The last truth about being a new real estate agent is that this job requires a strong, positive mindset and regimented consistency. This career, especially at the beginning, is going to be a roller coaster. There are going to be highs and lows and you'll need a mindset that allows you to deal with all of that. Your mindset, or established set of attitudes, controls how you respond in the face of adversity and deal with both internal and external pressures.</p>
 
+        <p>One of the main reasons that I started NAM is because I've always believed that your mindset is key to your success. As a teacher for a number of years, I can't tell you how many times mindset played a critical role in a student's outcome. The attitudes we have about ourself and others factor into just about every aspect of our lives. From how we develop and maintain new relationships to how we deal with hardship, mindset matters!</p>
+
+        <p>One truth that many new real estate agents don't realize is the importance of consistency. Consistency is the steadfast adherence to a pattern of behaviors or actions. I can admit that I had no idea how important consistency was going to be in real estate. In a business where you are trying to become and stay 'top of mind,' consistency is your most powerful tool.</p>
+
+        <p>Many of the lead gen strategies that you are going to employ depend on consistent action. Whether it's circle prospecting, door knocking, or running a YouTube channel, you need to establish a schedule and stick to it. So many agents start something and give it after only a short time. Many of the strategies that are designed to attract clients require consistent action over time. That time may be several weeks if not months, and the only way to see the results is to stick with it!</p>
+
+        <h2 className={MainStyles.title3}>BONUS What Others Say</h2>
+        <p>As an added bonus, I recently asked a large group of realtors what misconceptions they had when they first got started. Here are some of their responses...</p>
+
+        <p>"You make great $ for working part time...lots of vacations, people will just need to buy and sell. Easy stuff!"</p>
+        <p>"How hard can it really be?"</p>
+        <p>"It’s great money and an easy/open schedule."</p>
+        <p>"All we do is show homes..."</p>
+        <p>"I thought that unrepresented people would just walk into the brokers office looking for a realtor on a regular basis."</p>
+        <p>"It’s easy and I’m gonna do it as a side gig haha."</p>
+        <p>"You just show houses and get paid big $$."</p>
+        <p>"You are actually running a business and are responsible for everything. EVERYTHING!"</p>
+
+        <p>I typically like to be very positive and upbeat because I do believe that real estate is a great career IF you're willing to put in the hard work and play the long game. This post includes the reality of what it's like to be a new real estate agent and I believe that it's better to know what you're getting into than jump in blindly. Real estate is an amazing opportunity to build wealth while helping people buy and sell homes. If you are thinking about getting into real estate, I say, go for it, BUT make sure you do your research first and be prepared!</p>
         <br />
         <br />
         <br />

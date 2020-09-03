@@ -42,7 +42,7 @@ export default () => {
             <span>September 2, 2020</span>
             <h2>The Truth About Being a Real Estate Agent</h2>
 
-            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599073387/New%20Agent%20Mindset/Blog%20Images/truth-real-estate-agent-m.jpg' alt='truth-real-estate-agent' title='truth-real-estate-agent' />
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599085004/New%20Agent%20Mindset/Blog%20Images/fake-fact-m400.jpg' alt='truth-real-estate-agent' title='truth-real-estate-agent' />
 
             <h3>New Real Estate Agent Misconceptions</h3>
             <p>As a new real estate agent, there are a lot of misconceptions and myths out there that you'll want to know about. This post is all about the truth about being a real estate agent.</p>
