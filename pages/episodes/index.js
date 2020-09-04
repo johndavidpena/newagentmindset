@@ -38,6 +38,34 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 7 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599246937/New%20Agent%20Mindset/episode-7-m400.jpg' alt='episode-7-thumbnail' title='episode-7-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599246938/New%20Agent%20Mindset/episode-7-7640.jpg' alt='episode-7-thumbnail' title='episode-7-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599246938/New%20Agent%20Mindset/episode-7-d770.jpg' alt='episode-7-thumbnail' title='episode-7-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.container}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='new-agent-mindset-episode-7' width="560" height="315" src="https://www.youtube.com/embed/woz2CtL-oUc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
+
         {/* EPISODE 6 */}
         <div className={MainStyles.podcastContainer}>
           <iframe title='new-agent-mindset-episode-6' src="https://anchor.fm/new-agent-mindset/embed/episodes/The-Importance-of-Persistence-ej05hr" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>

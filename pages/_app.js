@@ -56,6 +56,7 @@ export default function MyApp({ Component, pageProps }) {
           --rhone-orange: #FF6822;
           --rhone-green: #3AD771;
           --blue: #228AFF;
+          --light-blue: #7CC1E4;
 
           --buyer-green: #005D82;
           --buyer-green-light: #D5F7F7;
