@@ -33,8 +33,29 @@ export default () => {
 
       <NextSeo
         title='New Real Estate Agent - Episodes | New Agent Mindset'
-        description='New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new realtors find success! This page contains all of the episodes in chronological order.'
+        description='All of the New Real Estate Agent Mindset episodes are here, including audio and video episodes. Make sure to check out the Resources Hub if you are a new real estate agent.'
         canonical='https://newagentmindset.com/episodes/index/'
+        openGraph={{
+          url: 'https://newagentmindset.com/episodes/index/',
+          title: 'New Real Estate Agent - Episodes | New Agent Mindset',
+          description: 'New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new real estate agents find success!',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
+              width: 720,
+              height: 720,
+              alt: 'New Real Estate Agent Mindset logo',
+            },
+            // {
+            //   url: 'https://www.example.ie/og-image-02.jpg',
+            //   width: 900,
+            //   height: 800,
+            //   alt: 'Og Image Alt Second',
+            // },
+            // { url: 'https://www.example.ie/og-image-03.jpg' },
+            // { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+        }}
       />
 
       <div>

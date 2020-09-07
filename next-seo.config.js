@@ -4,11 +4,11 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    site_name: 'New Agent Mindset',
+    site_name: 'New Real Estate Agent Mindset',
   },
-  // twitter: {
-  //   handle: '@handle',
-  //   site: '@site',
-  //   cardType: 'summary_large_image',
-  // },
+  twitter: {
+    handle: '@PocktHerc',
+    site: '@site',
+    cardType: 'summary_large_image',
+  },
 }

@@ -31,8 +31,29 @@ export default () => {
 
       <NextSeo
         title='New Real Estate Agent - Blog | New Agent Mindset'
-        description='New Agent Mindset blog for new real estate agents. The blog contains strategies, tips, and advice for new realtors looking to succeed in their real estate careers.'
+        description='New Agent Mindset blog for new real estate agents. The blog contains strategies, tips, and advice for new real estate agents looking to succeed in their real estate careers.'
         canonical='https://newagentmindset.com/blog/index/'
+        openGraph={{
+          url: 'https://newagentmindset.com/blog/index/',
+          title: 'New Real Estate Agent - Blog | New Agent Mindset',
+          description: 'New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new real estate agents find success!',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
+              width: 720,
+              height: 720,
+              alt: 'New Real Estate Agent Mindset logo',
+            },
+            // {
+            //   url: 'https://www.example.ie/og-image-02.jpg',
+            //   width: 900,
+            //   height: 800,
+            //   alt: 'Og Image Alt Second',
+            // },
+            // { url: 'https://www.example.ie/og-image-03.jpg' },
+            // { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+        }}
       />
 
       <div className={BlogStyles.blog}>

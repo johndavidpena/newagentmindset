@@ -32,8 +32,29 @@ export default () => {
 
       <NextSeo
         title='New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset'
-        description='New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset'
+        description='For new real estate agents, getting started with lead generation is probably the most important priority. This post and corresponding video episode showcases a number of traditional lead gen options to consider if you are a new real estate agent.'
         canonical='https://newagentmindset.com/blog/posts/getting-started-lead-gen/'
+        openGraph={{
+          url: 'https://newagentmindset.com/blog/posts/getting-started-lead-gen/',
+          title: 'New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset',
+          description: 'For new real estate agents, getting started with lead generation is probably the most important priority. This post and corresponding video episode showcases a number of traditional lead gen options to consider if you are a new real estate agent.',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
+              width: 720,
+              height: 720,
+              alt: 'New Real Estate Agent Mindset logo',
+            },
+            // {
+            //   url: 'https://www.example.ie/og-image-02.jpg',
+            //   width: 900,
+            //   height: 800,
+            //   alt: 'Og Image Alt Second',
+            // },
+            // { url: 'https://www.example.ie/og-image-03.jpg' },
+            // { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+        }}
       />
 
       <div>

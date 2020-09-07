@@ -34,8 +34,29 @@ export default () => {
 
       <NextSeo
         title='New Real Estate Agent - The Truth About Being a Real Estate Agent | New Agent Mindset'
-        description='New Real Estate Agent - The Truth About Being a Real Estate Agent | New Agent Mindset'
+        description='There are a lot of misconceptions out there among new real estate agents and this post and corresponding video episode aims to dispel those myths. If you are a new real estate agent then it is important to know the truth about what it is really like being an agent.'
         canonical='https://newagentmindset.com/blog/posts/truth-real-estate-agent/'
+        openGraph={{
+          url: 'https://newagentmindset.com/blog/posts/truth-real-estate-agent/',
+          title: 'New Real Estate Agent - The Truth About Being a Real Estate Agent | New Agent Mindset',
+          description: 'There are a lot of misconceptions out there among new real estate agents and this post and corresponding video episode aims to dispel those myths. If you are a new real estate agent then it is important to know the truth about what it is really like being an agent.',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
+              width: 720,
+              height: 720,
+              alt: 'New Real Estate Agent Mindset logo',
+            },
+            // {
+            //   url: 'https://www.example.ie/og-image-02.jpg',
+            //   width: 900,
+            //   height: 800,
+            //   alt: 'Og Image Alt Second',
+            // },
+            // { url: 'https://www.example.ie/og-image-03.jpg' },
+            // { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+        }}
       />
 
       <div>

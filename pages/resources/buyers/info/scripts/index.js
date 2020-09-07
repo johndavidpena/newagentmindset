@@ -32,8 +32,29 @@ export default () => {
 
       <NextSeo
         title='New Real Estate Agent - Buyer Scripts | New Agent Mindset'
-        description='New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new realtors find success!'
+        description='Here is a collection of buyer scripts for new real estate agents. More will be added on a regular basis, so check back often!'
         canonical='https://newagentmindset.com/resources/buyers/scripts'
+        openGraph={{
+          url: 'https://newagentmindset.com/resources/buyers/scripts',
+          title: 'New Real Estate Agent - Buyer Scripts | New Agent Mindset',
+          description: 'New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new real estate agents find success!',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
+              width: 720,
+              height: 720,
+              alt: 'New Real Estate Agent Mindset logo',
+            },
+            // {
+            //   url: 'https://www.example.ie/og-image-02.jpg',
+            //   width: 900,
+            //   height: 800,
+            //   alt: 'Og Image Alt Second',
+            // },
+            // { url: 'https://www.example.ie/og-image-03.jpg' },
+            // { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+        }}
       />
 
       <div>

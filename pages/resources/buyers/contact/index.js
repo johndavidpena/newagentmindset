@@ -25,13 +25,34 @@ export default () => {
   return (
     <>
       <Head>
-        <title>New Agent Mindset | Resource Hub | Buyer Contact</title>
+        <title>New Real Estate Agent - Buyer Contact Resources | New Agent Mindset</title>
       </Head>
 
       <NextSeo
-        title='New Agent Mindset | Resource Hub | Buyer Contact'
-        description='New Agent Mindset | Resource Hub | Buyer Contact'
+        title='New Real Estate Agent - Buyer Contact Resources | New Agent Mindset'
+        description='New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new real estate agents find success!'
         canonical='https://newagentmindset.com/resources/buyers/contact'
+        openGraph={{
+          url: 'https://newagentmindset.com/resources/buyers/contact',
+          title: 'New Real Estate Agent - Buyer Contact Resources | New Agent Mindset',
+          description: 'New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new real estate agents find success!',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
+              width: 720,
+              height: 720,
+              alt: 'New Real Estate Agent Mindset logo',
+            },
+            // {
+            //   url: 'https://www.example.ie/og-image-02.jpg',
+            //   width: 900,
+            //   height: 800,
+            //   alt: 'Og Image Alt Second',
+            // },
+            // { url: 'https://www.example.ie/og-image-03.jpg' },
+            // { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+        }}
       />
 
       <div>
