@@ -1,26 +1,26 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
-import { useState, useEffect } from 'react';
-import { useWindowSize } from '../../../../hooks/useWindowSize';
+// import { useState, useEffect } from 'react';
+// import { useWindowSize } from '../../../../hooks/useWindowSize';
 import MainStyles from '../../../../stylesheets/Main.module.css';
 import IndexStyles from '../../../../stylesheets/Index.module.css';
 import BlogStyles from '../../../../stylesheets/Blog.module.css';
 
 export default () => {
-  const size = useWindowSize();
-  let width = size.width;
+  // const size = useWindowSize();
+  // let width = size.width;
 
-  const [screenSize, setScreenSize] = useState('');
+  // const [screenSize, setScreenSize] = useState('');
 
-  useEffect(() => {
-    if (width <= 576) {
-      setScreenSize('mobile');
-    } else if (width > 576) {
-      setScreenSize('desktop');
-    }
-    return () => { };
-  }, [width]);
+  // useEffect(() => {
+  //   if (width <= 576) {
+  //     setScreenSize('mobile');
+  //   } else if (width > 576) {
+  //     setScreenSize('desktop');
+  //   }
+  //   return () => { };
+  // }, [width]);
 
   return (
     <>

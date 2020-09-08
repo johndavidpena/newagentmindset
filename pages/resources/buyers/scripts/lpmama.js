@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import { useState, useEffect } from 'react';
-import { useWindowSize } from '../../../../../hooks/useWindowSize';
+import { useWindowSize } from '../../../../hooks/useWindowSize';
 import MainStyles from '../../../../stylesheets/Main.module.css';
 import ScriptStyles from '../../../../stylesheets/Scripts.module.css';
 

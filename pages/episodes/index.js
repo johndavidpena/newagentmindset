@@ -59,6 +59,11 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 8 */}
+        <div className={MainStyles.podcastContainer}>
+          <iframe title='new-agent-mindset-episode-8' src="https://anchor.fm/new-agent-mindset/embed/episodes/Identifying-Your-Unique-Value-ejaarm" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+        </div>
+
         {/* EPISODE 7 */}
         {!loadVideo && screenSize === 'mobile' && (
           <div className={IndexStyles.thumbnailContainer}>
