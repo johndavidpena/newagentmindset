@@ -3,23 +3,25 @@ import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../../hooks/useWindowSize';
+import * as gtag from '../../../../utils/gtag';
 import MainStyles from '../../../../stylesheets/Main.module.css';
 import ScriptStyles from '../../../../stylesheets/Scripts.module.css';
 
 export default () => {
-  const size = useWindowSize();
-  let width = size.width;
+  // const size = useWindowSize();
+  // let width = size.width;
 
-  const [screenSize, setScreenSize] = useState('');
+  // const [screenSize, setScreenSize] = useState('');
 
-  useEffect(() => {
-    if (width <= 576) {
-      setScreenSize('mobile');
-    } else if (width > 576) {
-      setScreenSize('desktop');
-    }
-    return () => { };
-  }, [width]);
+  // useEffect(() => {
+  //   if (width <= 576) {
+  //     setScreenSize('mobile');
+  //   } else if (width > 576) {
+  //     setScreenSize('desktop');
+  //   }
+  //   return () => { };
+  // }, [width]);
+
 
   return (
     <>
@@ -102,7 +104,17 @@ export default () => {
 
         <br />
         <br />
-        <a href='https://res.cloudinary.com/mimas-music/image/upload/v1599071920/New%20Agent%20Mindset/PDFs/LPMAMA_-_a_script_for_talking_to_buyers.pdf' target='_blank' >Download PDF</a>
+        {/* TODO: Get this to work! */}
+        <a onClick={() => {
+          gtag.event({
+            action: 'LPMAMApdf_download',
+            category: 'Download',
+            label: 'LPMAMAMpdf',
+            value: 'Download'
+          });
+          console.log('Download link clicked');
+        }}
+          href='https://res.cloudinary.com/mimas-music/image/upload/v1599071920/New%20Agent%20Mindset/PDFs/LPMAMA_-_a_script_for_talking_to_buyers.pdf' target='_blank' >Download PDF</a>
 
         <br />
         <br />

@@ -58,6 +58,18 @@ export default () => {
 
       <div className={BlogStyles.blog}>
 
+        <Link href='/blog/posts/circle-prospecting'>
+          <div className={BlogStyles.card}>
+            <span>September 9, 2020</span>
+            <h2>What is Circle Prospecting?</h2>
+
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599663976/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-calling-m400.jpg' alt='circle-prospecting-calling' title='circle-prospecting-calling' />
+
+            <h3>Should I Do Circle Prospecting as a New Real Estate Agent?</h3>
+            <p>Circle prospecting is one of many lead generation strategies that is employed by countless agents. But, as a new real estate agent, is it a good prospecting option for you?</p>
+          </div>
+        </Link>
+
         <Link href='/blog/posts/truth-real-estate-agent'>
           <div className={BlogStyles.card}>
             <span>September 2, 2020</span>

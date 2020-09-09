@@ -73,13 +73,26 @@
   color: var(--rhone-orange);
 }
 
-.title3 {
+/* .title3 {
   color: var(--blue);
   font-size: 1.5rem;
 }
 @media (min-width: 768px) {
   .title3 {
     font-size: 2.5rem;
+  }
+} */
+.title3 {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue);
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .title3 {
+    font-size: 2.25rem;
   }
 }
 .stat {
@@ -136,12 +149,17 @@
   cursor: pointer;
 }
 
+.externalLink {
+  color: var(--rhone-green);
+  cursor: pointer;
+}
+
 /* Video styles */
 .container {
   margin: 4rem 0;
 }
 
-.videoResponsive{
+.videoResponsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
@@ -150,7 +168,7 @@
   border-radius: var(--border-radius);
 }
 
-.videoResponsive iframe{
+.videoResponsive iframe {
   left: 0;
   top: 0;
   height: 100%;
