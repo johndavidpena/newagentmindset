@@ -110,7 +110,7 @@ export default () => {
             action: 'LPMAMApdf_download',
             category: 'Download',
             label: 'LPMAMAMpdf',
-            value: 'Download'
+            value: 1
           });
           console.log('Download link clicked');
         }}

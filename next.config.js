@@ -14,5 +14,12 @@ module.exports = {
     FIREBASE_MEASUREMENTID: process.env.FIREBASE_MEASUREMENTID,
     TWILIO_ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID,
     TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./scripts/generate-sitemap');
+    }
+
+    return config;
   }
 }
