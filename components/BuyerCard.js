@@ -39,8 +39,8 @@ const BuyerCard = () => {
         <Link href='/resources/buyers/scripts'>
           <p><span>&#10516;</span>&nbsp;Scripts for Buyers</p>
         </Link>
-        <Link href='/resources/buyers/info'>
-          <p><span>&#10516;</span>&nbsp;Information for Buyers</p>
+        <Link href='/resources/buyers/videos'>
+          <p><span>&#10516;</span>&nbsp;Make These Videos</p>
         </Link>
         <Link href='/resources/buyers/contact'>
           <p><span>&#10516;</span>&nbsp;Buyer Contact Sheet</p>

@@ -59,6 +59,39 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 10 */}
+        <div className={MainStyles.podcastContainer}>
+          <iframe title='new-agent-mindset-episode-10' src="https://anchor.fm/new-agent-mindset/embed/episodes/Tomorrow-Is-Buried-with-Yesterday-ejm6do" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        {/* EPISODE 9 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600292538/New%20Agent%20Mindset/Episodes/episode-9-m400.jpg' alt='episode-9-thumbnail' title='episode-9-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600292539/New%20Agent%20Mindset/Episodes/episode-9-t640.jpg' alt='episode-9-thumbnail' title='episode-9-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600292538/New%20Agent%20Mindset/Episodes/episode-9-d770.jpg' alt='episode-9-thumbnail' title='episode-9-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.container}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='new-agent-mindset-episode-9' width="560" height="315" src="https://www.youtube.com/embed/B3GefNdLdqs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
+
         {/* EPISODE 8 */}
         <div className={MainStyles.podcastContainer}>
           <iframe title='new-agent-mindset-episode-8' src="https://anchor.fm/new-agent-mindset/embed/episodes/Identifying-Your-Unique-Value-ejaarm" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
