@@ -81,7 +81,7 @@ export default () => {
           </div>
         )}
 
-        {loadVideo && <div className={MainStyles.container}>
+        {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
             <iframe title='new-agent-mindset-episode-11' width="560" height="315" src="https://www.youtube.com/embed/EAw4Ouz3U-Y" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -114,7 +114,7 @@ export default () => {
           </div>
         )}
 
-        {loadVideo && <div className={MainStyles.container}>
+        {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
             <iframe title='new-agent-mindset-episode-9' width="560" height="315" src="https://www.youtube.com/embed/B3GefNdLdqs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -147,7 +147,7 @@ export default () => {
           </div>
         )}
 
-        {loadVideo && <div className={MainStyles.container}>
+        {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
             <iframe title='new-agent-mindset-episode-7' width="560" height="315" src="https://www.youtube.com/embed/woz2CtL-oUc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -180,7 +180,7 @@ export default () => {
           </div>
         )}
 
-        {loadVideo && <div className={MainStyles.container}>
+        {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
             <iframe title='new-agent-mindset-episode-5-video' width="560" height="315" src="https://www.youtube.com/embed/89Hd6-qss8I" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -213,7 +213,7 @@ export default () => {
           </div>
         )}
 
-        {loadVideo && <div className={MainStyles.container}>
+        {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
             <iframe title='new-agent-mindset-episode-3-video' width="560" height="315" src="https://www.youtube.com/embed/jQkt9sumwn4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -246,7 +246,7 @@ export default () => {
           </div>
         )}
 
-        {loadVideo && <div className={MainStyles.container}>
+        {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
             <iframe title='new-agent-mindset-episode-1-video' width="560" height="315" src="https://www.youtube.com/embed/Y01z2pMyIZs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>

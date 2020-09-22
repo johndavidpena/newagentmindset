@@ -1,6 +1,6 @@
 import Router from 'next/router';
 import Layout from '../components/Layout';
-import UserProvider from '../context/userContext';
+// import UserProvider from '../context/userContext';
 import * as gtag from '../utils/gtag';
 import * as Sentry from '@sentry/browser';
 import { DefaultSeo } from 'next-seo';
@@ -16,9 +16,9 @@ export default function MyApp({ Component, pageProps }) {
       <>
         <DefaultSeo {...SEO} />
 
-        <UserProvider>
-          <Component {...pageProps} />
-        </UserProvider>
+        {/* <UserProvider> */}
+        <Component {...pageProps} />
+        {/* </UserProvider> */}
         <style jsx global>{`
         {/* Breakpoints from https://flaviocopes.com/css-breakpoints/
         mobile portrait: less than 640px

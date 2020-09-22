@@ -87,7 +87,7 @@ export default () => {
         </div>
       )}
 
-      {loadVideo && <div className={MainStyles.container}>
+      {loadVideo && <div className={MainStyles.videoContainer}>
         <div className={MainStyles.videoResponsive}>
           <iframe title='new-agent-mindset-episode-1-video' width="560" height="315" src="https://www.youtube.com/embed/Y01z2pMyIZs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>

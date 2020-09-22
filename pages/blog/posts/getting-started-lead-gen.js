@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { NextSeo, ArticleJsonLd } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import BasicEmail from '../../../components/Forms/BasicEmail';
@@ -45,14 +45,18 @@ export default () => {
               height: 720,
               alt: 'New Real Estate Agent Mindset logo',
             },
-            // {
-            //   url: 'https://www.example.ie/og-image-02.jpg',
-            //   width: 900,
-            //   height: 800,
-            //   alt: 'Og Image Alt Second',
-            // },
-            // { url: 'https://www.example.ie/og-image-03.jpg' },
-            // { url: 'https://www.example.ie/og-image-04.jpg' },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599077329/New%20Agent%20Mindset/Blog%20Images/lead-gen-two-women-t640.jpg',
+              width: 640,
+              height: 427,
+              alt: 'lead-gen-two-women',
+            },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599077824/New%20Agent%20Mindset/Blog%20Images/lead-generation-guy-t640.jpg',
+              width: 640,
+              height: 426,
+              alt: 'lead-generation-guy',
+            },
           ],
         }}
       />
@@ -61,6 +65,19 @@ export default () => {
         <h1 className={MainStyles.title1}>getting started with
          <span aria-hidden="true" className={MainStyles.title2}>&nbsp;lead gen</span>
         </h1>
+        <ArticleJsonLd
+          url="https://newagentmindset.com/blog/posts/getting-started-lead-gen"
+          title="Getting Started with Lead Generation"
+          images={[
+            'https://res.cloudinary.com/mimas-music/image/upload/v1599077329/New%20Agent%20Mindset/Blog%20Images/lead-gen-two-women-t640.jpg',
+            'https://res.cloudinary.com/mimas-music/image/upload/v1599077824/New%20Agent%20Mindset/Blog%20Images/lead-generation-guy-t640.jpg',
+          ]}
+          datePublished="2020-08-28T08:00:00+08:00"
+          authorName="John Pena"
+          publisherName="New Agent Mindset"
+          publisherLogo="https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg"
+          description="For new real estate agents, getting started with lead generation is probably the most important priority. This post and corresponding video episode showcases a number of traditional lead gen options to consider if you are a new real estate agent."
+        />
 
         <p>Lead generation, or lead gen, is the practice of finding clients. Typically, buyers, sellers, or investors that are ready, willing, and able to act. As a new real estate agent, this can be a daunting process because it's something completely new for most agents, and there are SO many options to try.</p>
 

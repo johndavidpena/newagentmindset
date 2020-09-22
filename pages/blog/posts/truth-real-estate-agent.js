@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { NextSeo, ArticleJsonLd } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import BasicEmail from '../../../components/Forms/BasicEmail';
@@ -47,14 +47,18 @@ export default () => {
               height: 720,
               alt: 'New Real Estate Agent Mindset logo',
             },
-            // {
-            //   url: 'https://www.example.ie/og-image-02.jpg',
-            //   width: 900,
-            //   height: 800,
-            //   alt: 'Og Image Alt Second',
-            // },
-            // { url: 'https://www.example.ie/og-image-03.jpg' },
-            // { url: 'https://www.example.ie/og-image-04.jpg' },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599085004/New%20Agent%20Mindset/Blog%20Images/fake-fact-t640.jpg',
+              width: 640,
+              height: 426,
+              alt: 'fact-vs-fake',
+            },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599141991/New%20Agent%20Mindset/Blog%20Images/save-your-money-t640.jpg',
+              width: 640,
+              height: 480,
+              alt: 'save-your-money',
+            },
           ],
         }}
       />
@@ -63,6 +67,19 @@ export default () => {
         <h1 className={MainStyles.title1}>the truth about being a
          <span aria-hidden="true" className={MainStyles.title2}>&nbsp;new real estate agent</span>
         </h1>
+        <ArticleJsonLd
+          url="https://newagentmindset.com/blog/posts/truth-real-estate-agent"
+          title="The Truth About Being a New Real Estate Agent"
+          images={[
+            'https://res.cloudinary.com/mimas-music/image/upload/v1599085004/New%20Agent%20Mindset/Blog%20Images/fake-fact-t640.jpg',
+            'https://res.cloudinary.com/mimas-music/image/upload/v1599141991/New%20Agent%20Mindset/Blog%20Images/save-your-money-t640.jpg',
+          ]}
+          datePublished="2020-09-02T08:00:00+08:00"
+          authorName="John Pena"
+          publisherName="New Agent Mindset"
+          publisherLogo="https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg"
+          description="There are a lot of misconceptions out there among new real estate agents and this post and corresponding video episode aims to dispel those myths. If you are a new real estate agent then it is important to know the truth about what it is really like being an agent."
+        />
 
         <p>Deciding to become a new real estate agent is a BIG decision. If you are considering getting into real estate, then you should definitely consider the 6 points below. Some of these points are flat out misconceptions that many people have about real estate agents and several constitute the hard truth that you need to hear. This could potentially be one of the biggest decisions of your life - why not start out with the truth so that you can make an informed decision?</p>
 

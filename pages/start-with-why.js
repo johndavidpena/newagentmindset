@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { NextSeo, ArticleJsonLd } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../hooks/useWindowSize';
 import MainStyles from '../stylesheets/Main.module.css';
@@ -35,7 +35,7 @@ export default () => {
         openGraph={{
           url: 'https://newagentmindset.com/start-with-why/',
           title: 'New Real Estate Agent - Start With Why | New Agent Mindset',
-          description: 'New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new real estate agents find success!',
+          description: 'New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new realtors find success! This page speaks to the importance of every agent figuring out their big WHY.',
           images: [
             {
               url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg',
@@ -43,14 +43,18 @@ export default () => {
               height: 720,
               alt: 'New Real Estate Agent Mindset logo',
             },
-            // {
-            //   url: 'https://www.example.ie/og-image-02.jpg',
-            //   width: 900,
-            //   height: 800,
-            //   alt: 'Og Image Alt Second',
-            // },
-            // { url: 'https://www.example.ie/og-image-03.jpg' },
-            // { url: 'https://www.example.ie/og-image-04.jpg' },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1597532499/New%20Agent%20Mindset/start-whith-why-m.jpg',
+              width: 640,
+              height: 960,
+              alt: 'start-with-why',
+            },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-m.jpg',
+              width: 640,
+              height: 426,
+              alt: 'focus-on-why',
+            },
           ],
         }}
       />
@@ -59,6 +63,19 @@ export default () => {
         <h1 className={MainStyles.title1}>start with
          <span aria-hidden="true" className={MainStyles.title2}>&nbsp;why</span>
         </h1>
+        <ArticleJsonLd
+          url="https://newagentmindset.com/start-with-why"
+          title="Start with Why"
+          images={[
+            'https://res.cloudinary.com/mimas-music/image/upload/v1597532499/New%20Agent%20Mindset/start-whith-why-m.jpg',
+            'https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-m.jpg',
+          ]}
+          datePublished="2020-08-21T08:00:00+08:00"
+          authorName="John Pena"
+          publisherName="New Agent Mindset"
+          publisherLogo="https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg"
+          description="New Agent Mindset is a podcast, Youtube channel, Facebook group, and website devoted to helping new real estate agents access the best strategies, tips, tools, and advice. Getting started in real estate is tough and New Agent Mindset exists to help new realtors find success! This page speaks to the importance of every agent figuring out their big WHY."
+        />
 
         <p>You have chosen to become a real estate agent, a job where you don't get paid a salary, you probably don't have health insurance, and you don't get paid unless you help a client buy or sell a home. In fact, YOU pay to be a real estate agent before you ever actually make any money. You don't have financial security or peace of mind and you're always about 45 days away from getting paid when you do start working with a client.</p>
 

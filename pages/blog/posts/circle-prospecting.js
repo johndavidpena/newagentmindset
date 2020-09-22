@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { NextSeo, ArticleJsonLd } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import BasicEmail from '../../../components/Forms/BasicEmail';
@@ -47,14 +47,18 @@ export default () => {
               height: 720,
               alt: 'New Real Estate Agent Mindset logo',
             },
-            // {
-            //   url: 'https://www.example.ie/og-image-02.jpg',
-            //   width: 900,
-            //   height: 800,
-            //   alt: 'Og Image Alt Second',
-            // },
-            // { url: 'https://www.example.ie/og-image-03.jpg' },
-            // { url: 'https://www.example.ie/og-image-04.jpg' },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599663977/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-neighborhood-t640.jpg',
+              width: 640,
+              height: 640,
+              alt: 'circle-prospecting-neighborhood',
+            },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599663977/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-calling-t640.jpg',
+              width: 640,
+              height: 387,
+              alt: 'circle-prospecting-calling',
+            },
           ],
         }}
       />
@@ -63,6 +67,19 @@ export default () => {
         <h1 className={MainStyles.title1}>what is
          <span aria-hidden="true" className={MainStyles.title2}>&nbsp;circle prospecting?</span>
         </h1>
+        <ArticleJsonLd
+          url="https://newagentmindset.com/blog/posts/circle-prospecting"
+          title="What is Circle Prospecting?"
+          images={[
+            'https://res.cloudinary.com/mimas-music/image/upload/v1599663977/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-neighborhood-t640.jpg',
+            'https://res.cloudinary.com/mimas-music/image/upload/v1599663977/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-calling-t640.jpg',
+          ]}
+          datePublished="2020-09-09T08:00:00+08:00"
+          authorName="John Pena"
+          publisherName="New Agent Mindset"
+          publisherLogo="https://res.cloudinary.com/mimas-music/image/upload/v1599500723/New%20Agent%20Mindset/720blackonWHITE.jpg"
+          description="Circle prospecting is a lead generation strategy used by many real estate agents, but, is it a good strategy for new real estate agents? This post clearly defines circle prospecting while exploring whether or not it is a good fit for new agents just getting into the business."
+        />
 
         <p>Circle prospecting is a lead gen strategy that is much like geographic farming in which the agent chooses a specific neighborhood or area and attempts to contact as many homeowners as possible. Many agents have a geographic farm that they regularly frequent whether that involves door knocking or calling those homeowners on the phone. When farming an area, an agent will typically offer the owner some 'value' like an update on the market or a value assessment of the home.</p>
 
