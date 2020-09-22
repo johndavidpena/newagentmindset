@@ -59,6 +59,11 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 12 */}
+        <div className={MainStyles.podcastContainer}>
+          <iframe title='master-of-my-emotions' src="https://anchor.fm/new-agent-mindset/embed/episodes/Master-of-My-Emotions-ek10qi" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+        </div>
+
         {/* EPISODE 11 */}
         {!loadVideo && screenSize === 'mobile' && (
           <div className={IndexStyles.thumbnailContainer}>
@@ -83,13 +88,13 @@ export default () => {
 
         {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
-            <iframe title='new-agent-mindset-episode-11' width="560" height="315" src="https://www.youtube.com/embed/EAw4Ouz3U-Y" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title='why-should-i-listen-to-you' width="560" height="315" src="https://www.youtube.com/embed/EAw4Ouz3U-Y" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>}
 
         {/* EPISODE 10 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='new-agent-mindset-episode-10' src="https://anchor.fm/new-agent-mindset/embed/episodes/Tomorrow-Is-Buried-with-Yesterday-ejm6do" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+          <iframe title='tomorrow-is-buried-with-yesterday' src="https://anchor.fm/new-agent-mindset/embed/episodes/Tomorrow-Is-Buried-with-Yesterday-ejm6do" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 9 */}
@@ -116,13 +121,13 @@ export default () => {
 
         {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
-            <iframe title='new-agent-mindset-episode-9' width="560" height="315" src="https://www.youtube.com/embed/B3GefNdLdqs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title='what-is-circle-prospecting' width="560" height="315" src="https://www.youtube.com/embed/B3GefNdLdqs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>}
 
         {/* EPISODE 8 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='new-agent-mindset-episode-8' src="https://anchor.fm/new-agent-mindset/embed/episodes/Identifying-Your-Unique-Value-ejaarm" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+          <iframe title='identifying-your-unique-value' src="https://anchor.fm/new-agent-mindset/embed/episodes/Identifying-Your-Unique-Value-ejaarm" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 7 */}
@@ -149,13 +154,13 @@ export default () => {
 
         {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
-            <iframe title='new-agent-mindset-episode-7' width="560" height="315" src="https://www.youtube.com/embed/woz2CtL-oUc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title='truth-about-being-new-real-estate-agent' width="560" height="315" src="https://www.youtube.com/embed/woz2CtL-oUc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>}
 
         {/* EPISODE 6 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='new-agent-mindset-episode-6' src="https://anchor.fm/new-agent-mindset/embed/episodes/The-Importance-of-Persistence-ej05hr" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+          <iframe title='importance-of-persistence' src="https://anchor.fm/new-agent-mindset/embed/episodes/The-Importance-of-Persistence-ej05hr" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 5 */}
@@ -182,13 +187,13 @@ export default () => {
 
         {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
-            <iframe title='new-agent-mindset-episode-5-video' width="560" height="315" src="https://www.youtube.com/embed/89Hd6-qss8I" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title='getting-started-with-lead-generation' width="560" height="315" src="https://www.youtube.com/embed/89Hd6-qss8I" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>}
 
         {/* EPISODE 4 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='new-agent-mindset-episode-4' src="https://anchor.fm/new-agent-mindset/embed/episodes/The-Power-of-Love-eil68t" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+          <iframe title='power-of-love' src="https://anchor.fm/new-agent-mindset/embed/episodes/The-Power-of-Love-eil68t" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 3 */}
@@ -215,13 +220,13 @@ export default () => {
 
         {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
-            <iframe title='new-agent-mindset-episode-3-video' width="560" height="315" src="https://www.youtube.com/embed/jQkt9sumwn4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title='start-with-why' width="560" height="315" src="https://www.youtube.com/embed/jQkt9sumwn4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>}
 
         {/* EPISODE 2 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='new-agent-mindset-episode-2' src="https://anchor.fm/new-agent-mindset/embed/episodes/Form-Good-Habits-eiagnu" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+          <iframe title='form-good-habits' src="https://anchor.fm/new-agent-mindset/embed/episodes/Form-Good-Habits-eiagnu" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 1 */}
@@ -248,7 +253,7 @@ export default () => {
 
         {loadVideo && <div className={MainStyles.videoContainer}>
           <div className={MainStyles.videoResponsive}>
-            <iframe title='new-agent-mindset-episode-1-video' width="560" height="315" src="https://www.youtube.com/embed/Y01z2pMyIZs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title='facts-tell-stories-sell' width="560" height="315" src="https://www.youtube.com/embed/Y01z2pMyIZs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>}
       </div>
