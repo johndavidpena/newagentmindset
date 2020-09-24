@@ -84,6 +84,7 @@
 } */
 .title3 {
   font-size: 1.25rem;
+  padding-top: 1rem;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
@@ -98,6 +99,22 @@
 .stat {
   color: var(--rhone-green);
   font-size: var(--font-smaller);
+}
+
+.greenBold {
+  color: var(--rhone-green);
+}
+
+.uList {
+  color: var(--off-white);
+  font-size: var(--font-size);
+  padding: 8px;
+  margin: 0 1rem;
+}
+@media (min-width: 768px) {
+  .uList {
+    font-size: var(--font-larger);
+  }
 }
 
 /* Button styles */

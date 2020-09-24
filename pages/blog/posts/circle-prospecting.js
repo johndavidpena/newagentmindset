@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import BasicEmail from '../../../components/Forms/BasicEmail';
 import BlogStyles from '../../../stylesheets/Blog.module.css';
+import IndexStyles from '../../../stylesheets/Index.module.css';
 import MainStyles from '../../../stylesheets/Main.module.css';
 
 // Keyword: 'circle prospecting'
@@ -14,6 +15,8 @@ export default () => {
   let width = size.width;
 
   const [screenSize, setScreenSize] = useState('');
+
+  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     if (width <= 576) {
@@ -29,16 +32,16 @@ export default () => {
   return (
     <>
       <Head>
-        <title>New Real Estate Agent - What is Circle Prospecting? | New Agent Mindset</title>
+        <title>What is Circle Prospecting? | New Agent Mindset</title>
       </Head>
 
       <NextSeo
-        title='New Real Estate Agent - What is Circle Prospecting? | New Agent Mindset'
+        title='What is Circle Prospecting? | New Agent Mindset'
         description='Circle prospecting is a lead generation strategy used by many real estate agents, but, is it a good strategy for new real estate agents? This post clearly defines circle prospecting while exploring whether or not it is a good fit for new agents just getting into the business.'
         canonical='https://newagentmindset.com/blog/posts/circle-prospecting/'
         openGraph={{
           url: 'https://newagentmindset.com/blog/posts/circle-prospecting/',
-          title: 'New Real Estate Agent - What is Circle Prospecting? | New Agent Mindset',
+          title: 'What is Circle Prospecting? | New Agent Mindset',
           description: 'Circle prospecting is a lead generation strategy used by many real estate agents, but, is it a good strategy for new real estate agents? This post clearly defines circle prospecting while exploring whether or not it is a good fit for new agents just getting into the business.',
           images: [
             {
@@ -97,7 +100,7 @@ export default () => {
           <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599663977/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-neighborhood-d770.jpg' alt='circle-prospecting-neighborhood' title='circle-prospecting-neighborhood' />
         )}
 
-        <h2 className={MainStyles.title3}>What's the script?</h2>
+        <h3 className={MainStyles.title3}>What's the script?</h3>
 
         <p>So, what do you say to these homeowners when circle prospecting? Let's say that there is a new listing in a neighborhood that you want to target. You would let the other homeowners know that there is a new listing in their neighborhood and talk about the advantages of selling right now. This is not difficult to do because currently (September, 2020), most markets are experiencing a seller's market. The inventory of homes is low and the demand is strong. By speaking to the 'shelter shortage,' you may be able to convince certain homeowners that now is the perfect time to sell.</p>
 
@@ -117,7 +120,7 @@ export default () => {
           <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599663977/New%20Agent%20Mindset/Blog%20Images/circle-prospecting-calling-d770.jpg' alt='circle-prospecting-calling' title='circle-prospecting-calling' />
         )}
 
-        <h2 className={MainStyles.title3}>The Logistics</h2>
+        <h3 className={MainStyles.title3}>The Logistics</h3>
 
         <p>In order to implement circle prospecting, you will first need to decide how you are going to contact the homeowners in your selected area. If you are going to go with door-knocking then you will need to be cautious because of the ongoing pandemic. At the very least, wear a mask, maybe even gloves since you'll be knocking or ringing, and stand back at least 6 feet from the homeowner. Be prepared for some nasty looks and upset people who do not appreciate the uninvited guest.</p>
 
@@ -133,7 +136,7 @@ export default () => {
 
         <BasicEmail heading='Keep Updated' />
 
-        <h2 className={MainStyles.title3}>Is it good for new agents?</h2>
+        <h3 className={MainStyles.title3}>Is it good for new agents?</h3>
 
         <p>So, is circle prospecting a good strategy for new real estate agents or not? My short answer is no and here's why. First of all, circle prospecting is a listing-focused strategy. The goal is to locate sellers and get the listing. Don't get me wrong, this is great and in many ways, is much more pleasant than showing a buyer 50 houses that they can't decide on. The problem is that working with sellers involves more experience and upfront money. Chances are that as a new agent, you don't have much if any experience selling a home and it is more involved than helping a buyer purchase a home.</p>
 
@@ -144,6 +147,36 @@ export default () => {
         <p>On the other hand, your situation may be such that circle prospecting is a great option. Perhaps you already have developed the know, like, and trust factor with the people in a geographic area or neighborhood. Maybe you are a natural door-knocker who can start up a conversation with just about anyone! If you have some money to spend on phone numbers or mailers and are willing to be consistent, this could be a fantastic strategy that pays dividends over the months and years.</p>
 
         <p>Regardless of your decision to do or not do circle prospecting, it's helpful to know about as many strategies as possible. As a new real estate agent it is important to quickly and effectively identify a handful of lead generation tactics that you plan to utilize. The most successful agents are the ones who choose wisely, in consideration of their particular strengths and weaknesses. As always, I wish you the best of luck on your new agent journey and feel free to reach out to me with questions or concerns.</p>
+
+        <p>To watch the video episode of this post, check out the link below!</p>
+
+        {/* EPISODE 9 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600292538/New%20Agent%20Mindset/Episodes/episode-9-m400.jpg' alt='episode-9-thumbnail' title='episode-9-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600292539/New%20Agent%20Mindset/Episodes/episode-9-t640.jpg' alt='episode-9-thumbnail' title='episode-9-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600292538/New%20Agent%20Mindset/Episodes/episode-9-d770.jpg' alt='episode-9-thumbnail' title='episode-9-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='what-is-circle-prospecting' width="560" height="315" src="https://www.youtube.com/embed/B3GefNdLdqs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
 
         <br />
         <br />

@@ -47,14 +47,18 @@ export default () => {
               height: 720,
               alt: 'New Real Estate Agent Mindset logo',
             },
-            // {
-            //   url: 'https://www.example.ie/og-image-02.jpg',
-            //   width: 900,
-            //   height: 800,
-            //   alt: 'Og Image Alt Second',
-            // },
-            // { url: 'https://www.example.ie/og-image-03.jpg' },
-            // { url: 'https://www.example.ie/og-image-04.jpg' },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599078140/New%20Agent%20Mindset/episode-1-thumbnail-t640.jpg',
+              width: 640,
+              height: 360,
+              alt: 'facts-tell-stories-sell',
+            },
+            {
+              url: 'https://res.cloudinary.com/mimas-music/image/upload/v1599078347/New%20Agent%20Mindset/connect-new-agent-mindset-t640.jpg',
+              width: 640,
+              height: 427,
+              alt: 'connect-new-agent-mindset',
+            },
           ],
         }}
       />

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { NextSeo, ArticleJsonLd } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../hooks/useWindowSize';
+import IndexStyles from '../stylesheets/Index.module.css';
 import MainStyles from '../stylesheets/Main.module.css';
 
 export default () => {
@@ -10,6 +11,8 @@ export default () => {
   let width = size.width;
 
   const [screenSize, setScreenSize] = useState('');
+
+  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     if (width <= 576) {
@@ -156,6 +159,36 @@ export default () => {
         </div>
 
         <p>In addition to joining the Facebook Group, please check out the <Link href='/resources'><span className={MainStyles.internalLink}>Resources Hub</span></Link> by clicking on the menu link above. Currently I am asking new agents to submit their needs here. Tell me what you need, what would be useful, what are your pain points?</p>
+
+        <p>If you'd like to see the video episode of this post, check out the link below!</p>
+
+        {/* EPISODE 3 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079502/New%20Agent%20Mindset/episode-3-m400.jpg' alt='episode-3-thumbnail' title='episode-3-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079503/New%20Agent%20Mindset/episode-3-t640.jpg' alt='episode-3-thumbnail' title='episode-3-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079502/New%20Agent%20Mindset/episode-3-d770.jpg' alt='episode-3-thumbnail' title='episode-3-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='start-with-why' width="560" height="315" src="https://www.youtube.com/embed/jQkt9sumwn4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
 
         <br />
         <br />

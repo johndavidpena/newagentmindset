@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import BasicEmail from '../../../components/Forms/BasicEmail';
 import BlogStyles from '../../../stylesheets/Blog.module.css';
+import IndexStyles from '../../../stylesheets/Index.module.css';
 import MainStyles from '../../../stylesheets/Main.module.css';
 
 export default () => {
@@ -12,6 +13,8 @@ export default () => {
   let width = size.width;
 
   const [screenSize, setScreenSize] = useState('');
+
+  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     if (width <= 576) {
@@ -27,16 +30,16 @@ export default () => {
   return (
     <>
       <Head>
-        <title>New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset</title>
+        <title>Getting Started with Lead Generation | New Agent Mindset</title>
       </Head>
 
       <NextSeo
-        title='New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset'
+        title='Getting Started with Lead Generation | New Agent Mindset'
         description='For new real estate agents, getting started with lead generation is probably the most important priority. This post and corresponding video episode showcases a number of traditional lead gen options to consider if you are a new real estate agent.'
         canonical='https://newagentmindset.com/blog/posts/getting-started-lead-gen/'
         openGraph={{
           url: 'https://newagentmindset.com/blog/posts/getting-started-lead-gen/',
-          title: 'New Real Estate Agent - Getting Started with Lead Generation | New Agent Mindset',
+          title: 'Getting Started with Lead Generation | New Agent Mindset',
           description: 'For new real estate agents, getting started with lead generation is probably the most important priority. This post and corresponding video episode showcases a number of traditional lead gen options to consider if you are a new real estate agent.',
           images: [
             {
@@ -193,6 +196,36 @@ export default () => {
         <p>Fortunately, in addition to these traditional approaches above, there are several more modern lead gen strategies that leverage social media and technology. This is exactly what we are going to talk about next time, so stay tuned!</p>
 
         <BasicEmail heading='Stay Updated' />
+
+        <p>If you'd like to watch the video episode of this post, check out the link below!</p>
+
+        {/* EPISODE 5 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079375/New%20Agent%20Mindset/episode-5-m400.jpg' alt='episode-5-thumbnail' title='episode-5-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079375/New%20Agent%20Mindset/episode-5-t640.jpg' alt='episode-5-thumbnail' title='episode-5-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079375/New%20Agent%20Mindset/episode-5-d770.jpg' alt='episode-5-thumbnail' title='episode-5-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='getting-started-with-lead-generation' width="560" height="315" src="https://www.youtube.com/embed/89Hd6-qss8I" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
 
         <br />
         <br />

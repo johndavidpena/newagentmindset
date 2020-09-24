@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo';
 import ResourceStyles from '../../stylesheets/Resources.module.css';
 import MainStyles from '../../stylesheets/Main.module.css';
 import BuyerCard from '../../components/BuyerCard';
+import NewAgentCard from '../../components/NewAgentCard';
 import ResourceNeeds from '../../components/Forms/ResourceNeeds';
 
 export default () => {
@@ -50,6 +51,11 @@ export default () => {
           <p>Welcome new agents, what do you need?</p>
           <ResourceNeeds />
         </div>
+
+        {/* <NewAgentCard />
+
+        <br />
+        <br /> */}
 
         <BuyerCard />
       </>

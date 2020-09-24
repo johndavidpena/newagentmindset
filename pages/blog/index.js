@@ -58,6 +58,18 @@ export default () => {
 
       <div className={BlogStyles.blog}>
 
+        <Link href='/blog/posts/sphere-of-influence'>
+          <div className={BlogStyles.card}>
+            <span>September 25, 2020</span>
+            <h2>Sphere of Influence Real Estate</h2>
+
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887773/New%20Agent%20Mindset/Blog%20Images/family-friends-m400.jpg' alt='family-friends' title='family-friends' />
+
+            <h3>Understanding and Maximizing Your SOI</h3>
+            <p>For real estate agents, your personal sphere of influence is your go-to for 42% of you business, according to NAR. These are the people that you know and have some bit of influence on. Ideally, the people in your SOI already know, like, and trust you.</p>
+          </div>
+        </Link>
+
         <Link href='/blog/posts/circle-prospecting'>
           <div className={BlogStyles.card}>
             <span>September 9, 2020</span>
