@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { NextSeo, ArticleJsonLd } from 'next-seo';
 import { useState, useEffect } from 'react';
 import { useWindowSize } from '../../../hooks/useWindowSize';
+import BlogIndexCard from '../../../components/BlogIndexCard';
 import BasicEmail from '../../../components/Forms/BasicEmail';
 import BlogStyles from '../../../stylesheets/Blog.module.css';
 import MainStyles from '../../../stylesheets/Main.module.css';
@@ -31,11 +32,11 @@ export default () => {
   return (
     <>
       <Head>
-        <title>Sphere of Influence Real Estate | New Agent Mindset</title>
+        <title>Sphere of Influence for Real Estate Agents | New Agent Mindset</title>
       </Head>
 
       <NextSeo
-        title='Sphere of Influence Real Estate | New Agent Mindset'
+        title='Sphere of Influence for Real Estate Agents | New Agent Mindset'
         description='.'
         canonical='https://newagentmindset.com/blog/posts/sphere-of-influence/'
         openGraph={{
@@ -66,12 +67,12 @@ export default () => {
       />
 
       <div>
-        <h1 className={MainStyles.title1}>sphere of influence
-         <span aria-hidden="true" className={MainStyles.title2}>&nbsp;real estate</span>
+        <h1 className={MainStyles.title1}>sphere of influence for
+         <span aria-hidden="true" className={MainStyles.title2}>&nbsp;real estate agents</span>
         </h1>
         <ArticleJsonLd
           url="https://newagentmindset.com/blog/posts/sphere-of-influence"
-          title="Sphere of Influence Real Estate"
+          title="Sphere of Influence for Real Estate Agents"
           images={[
             'https://res.cloudinary.com/mimas-music/image/upload/v1600887774/New%20Agent%20Mindset/Blog%20Images/family-friends-t640.jpg',
             'https://res.cloudinary.com/mimas-music/image/upload/v1600893897/New%20Agent%20Mindset/Blog%20Images/announcement-t640.jpg',
@@ -83,17 +84,14 @@ export default () => {
           description=""
         />
 
-        {screenSize === 'mobile' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887773/New%20Agent%20Mindset/Blog%20Images/family-friends-m400.jpg' alt='family-friends' title='family-friends' />
-        )}
-
-        {screenSize === 'tablet' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887774/New%20Agent%20Mindset/Blog%20Images/family-friends-t640.jpg' alt='family-friends' title='family-friends' />
-        )}
-
-        {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887774/New%20Agent%20Mindset/Blog%20Images/family-friends-d770.jpg' alt='family-friends' title='family-friends' />
-        )}
+        <BlogIndexCard imageURL='https://res.cloudinary.com/mimas-music/image/upload/v1600980101/New%20Agent%20Mindset/Envato%20Assets/sphereIllustration375.jpg'
+          imageInfo='sphere-influence-illustration'
+          summary="In real estate, one's sphere of influence accounts for about 42% of all business according to NAR. Your personal sphere of influence requires your immediate and continued attention."
+          content1='SOI Explained'
+          content2='Organizing Your SOI'
+          content3='New Agent Announcement'
+          content4='SOI Nurturing'
+        />
 
         <h3 className={MainStyles.title3}>What is a sphere of influence in real estate?</h3>
 
@@ -110,6 +108,18 @@ export default () => {
         <p>Later in the post we are going to discuss ways to grow your sphere of influence. As you can imagine, social media sites like Facebook, Instagram, LinkedIn, and others provide amazing opportunities to expand your SOI. However, it's also fair to say that social media has created a bit of a gray area when it comes to 'friends.' You most likely have some influence with your real friends, those people that you know personally and interact with regularly. You probably do not have that same amount of influence with all of your Facebook friends.</p>
 
         <p>In the next section when we start to organize your SOI, think deeply about who to include. My humble suggestion is that you only include those people that you honestly know and would consider a true friend or acquaintance. If you choose to include EVERY single person that you've connected with on social media, you're missing the point. Chances are, some of those people don't even really know who you are, much less care that you're a real estate agent. If you reach out to them as if they are family or friends, it may come off as insincere or downright awkward.</p>
+
+        {screenSize === 'mobile' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887773/New%20Agent%20Mindset/Blog%20Images/family-friends-m400.jpg' alt='family-friends' title='family-friends' />
+        )}
+
+        {screenSize === 'tablet' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887774/New%20Agent%20Mindset/Blog%20Images/family-friends-t640.jpg' alt='family-friends' title='family-friends' />
+        )}
+
+        {screenSize === 'desktop' && (
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600887774/New%20Agent%20Mindset/Blog%20Images/family-friends-d770.jpg' alt='family-friends' title='family-friends' />
+        )}
 
         <h3 className={MainStyles.title3}>Organizing your personal sphere of influence</h3>
 

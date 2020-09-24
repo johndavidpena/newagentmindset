@@ -36,14 +36,16 @@
   padding: 1rem;
 }
 
-.resources {
+.resources,
+.contents {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 2rem;
 }
 
-.resources h3 {
+.resources h3,
+.contents h3 {
   color: var(--buyer-green);
   font-weight: 500;
 }
@@ -53,6 +55,11 @@
   cursor: pointer;
 }
 
-.resources p > span {
+.contents p {
+  color: var(--buyer-green);
+}
+
+.resources p > span,
+.contents p > span {
   color: var(--blue);
 }
