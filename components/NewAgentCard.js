@@ -8,7 +8,7 @@ const NewAgentCard = () => {
   return (
     <div className={BuyerCardStyles.container}>
       <div className={BuyerCardStyles.titleImage}>
-        <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599079847/New%20Agent%20Mindset/Envato%20Assets/real-estate-agent-buyer-resources-375.jpg' title='new-agent-illustration' alt='new-agent-illustration' />
+        <img src='https://res.cloudinary.com/mimas-music/image/upload/v1600981718/New%20Agent%20Mindset/Envato%20Assets/newAgentIllustration.jpg' title='new-agent-illustration' alt='new-agent-illustration' />
       </div>
 
       <div className={BuyerCardStyles.description}>

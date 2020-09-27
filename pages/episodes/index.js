@@ -59,6 +59,34 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 13 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-m400.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-t640.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-d770.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='sphere-of-influence-real-estate' width="560" height="315" src="https://www.youtube.com/embed/OzJJS5IOmjY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
+
         {/* EPISODE 12 */}
         <div className={MainStyles.podcastContainer}>
           <iframe title='master-of-my-emotions' src="https://anchor.fm/new-agent-mindset/embed/episodes/Master-of-My-Emotions-ek10qi" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

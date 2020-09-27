@@ -73,27 +73,27 @@ export default () => {
       {!loadVideo && screenSize === 'mobile' && (
         <div className={IndexStyles.thumbnailContainer}>
           <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078140/New%20Agent%20Mindset/episode-1-thumbnail-m400jpg.jpg' alt='episode-1-thumbnail' title='episode-1-thumbnail' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-m400.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
         </div>
       )}
 
       {!loadVideo && screenSize === 'tablet' && (
         <div className={IndexStyles.thumbnailContainer}>
           <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078140/New%20Agent%20Mindset/episode-1-thumbnail-t640.jpg' alt='episode-1-thumbnail' title='episode-1-thumbnail' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-t640.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
         </div>
       )}
 
       {!loadVideo && screenSize === 'desktop' && (
         <div className={IndexStyles.thumbnailContainer}>
           <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1599078140/New%20Agent%20Mindset/episode-1-thumbnail-d770.jpg' alt='episode-1-thumbnail' title='episode-1-thumbnail' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-d770.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
         </div>
       )}
 
       {loadVideo && <div className={MainStyles.videoContainer}>
         <div className={MainStyles.videoResponsive}>
-          <iframe title='new-agent-mindset-episode-1-video' width="560" height="315" src="https://www.youtube.com/embed/Y01z2pMyIZs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title='sphere-of-influence-real-estate' width="560" height="315" src="https://www.youtube.com/embed/OzJJS5IOmjY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>}
 
