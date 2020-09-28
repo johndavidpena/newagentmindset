@@ -13,7 +13,7 @@ const prettier = require('prettier');
     '!pages/api'
   ]);
 
-  console.log(pages);
+  // console.log(pages);
 
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>

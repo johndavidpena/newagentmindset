@@ -7,6 +7,7 @@ import BlogIndexCard from '../../../components/BlogIndexCard';
 import BasicEmail from '../../../components/Forms/BasicEmail';
 import BlogStyles from '../../../stylesheets/Blog.module.css';
 import MainStyles from '../../../stylesheets/Main.module.css';
+import IndexStyles from '../../../stylesheets/Index.module.css';
 
 // Keyword: 'sphere of influence real estate'
 // Volume: 260/mo | CPC: $2.04 | Competition: 0.06 |
@@ -17,6 +18,7 @@ export default () => {
   let width = size.width;
 
   const [screenSize, setScreenSize] = useState('');
+  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     if (width <= 576) {
@@ -186,7 +188,34 @@ export default () => {
 
         <p>So, between all of these methods, do you think you can start to close in on those 40 touches a year? It's an ambitious goal but remember, more than 40% of your real estate business (income) could come directly from your sphere of influence. When you put it that way, it seems well worth it!</p>
 
-        {/* <p>To see the video episode of this post, check out the link below. Spoiler alert, I've got a great story about how I recently FAILED at keeping in touch with someone in my SOI and suffered the consequences. 😢</p> */}
+        <p>To see the video episode of this post, check out the link below. Spoiler alert, I've got a great story about how I recently FAILED at keeping in touch with someone in my SOI and suffered the consequences. 😢</p>
+
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-m400.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-t640.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601234630/New%20Agent%20Mindset/Episodes/sphere-d770.jpg' alt='episode-13-thumbnail' title='episode-13-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='sphere-of-influence-real-estate' width="560" height="315" src="https://www.youtube.com/embed/OzJJS5IOmjY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
 
         <br />
         <br />
