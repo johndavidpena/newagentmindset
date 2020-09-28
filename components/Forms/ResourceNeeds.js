@@ -3,6 +3,7 @@ import MainStyles from '../../stylesheets/Main.module.css';
 import FormStyles from './Form.module.css';
 import { useFormik } from 'formik';
 import firebase from '../../firebase/clientApp';
+import * as gtag from '../../utils/gtag';
 
 // TODO: Error handling
 const validate = values => {
@@ -33,6 +34,14 @@ const ResourceNeeds = () => {
           // console.log('Submitted resourceNeeds form');
           console.log(textArea.current.value);
           setSubmitted(true);
+        })
+        .then(() => {
+          gtag.event({
+            action: 'resource_form',
+            category: 'Resource',
+            label: 'ResourceForm',
+            value: 'Submit'
+          })
         })
         .catch(error => {
           console.log('onSubmit error: ', error);

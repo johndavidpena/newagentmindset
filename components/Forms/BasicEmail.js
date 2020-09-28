@@ -4,6 +4,7 @@ import FormStyles from './Form.module.css';
 import { useFormik } from 'formik';
 import firebase from '../../firebase/clientApp';
 import axios from 'axios/index';
+import * as gtag from '../../utils/gtag';
 
 const validate = values => {
   const errors = {};
@@ -45,16 +46,24 @@ const BasicEmail = props => {
         lastName: values.lastName,
         email: values.email
       })
-      .then(() => {
-        const twilioAlert = axios.post('/api/twilioAlert', { values: values });
-      })
-      .then(() => {
-        console.log('Submitted');
-        setSubmitted(true);
-      })
-      .catch(error => {
-        console.log('Error onSubmit', error);
-      });
+        .then(() => {
+          const twilioAlert = axios.post('/api/twilioAlert', { values: values });
+        })
+        .then(() => {
+          console.log('Submitted');
+          setSubmitted(true);
+        })
+        .then(() => {
+          gtag.event({
+            action: 'submit_form',
+            category: 'Contact',
+            label: 'ContactForm',
+            value: 'Submit'
+          })
+        })
+        .catch(error => {
+          console.log('Error onSubmit', error);
+        });
     }
   });
 
