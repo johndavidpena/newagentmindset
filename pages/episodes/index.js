@@ -59,6 +59,11 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 14 */}
+        <div className={MainStyles.podcastContainer}>
+          <iframe title='this-too-shall-pass' src="https://anchor.fm/new-agent-mindset/embed/episodes/This-Too-Shall-Pass-ekbl27" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+        </div>
+
         {/* EPISODE 13 */}
         {!loadVideo && screenSize === 'mobile' && (
           <div className={IndexStyles.thumbnailContainer}>
@@ -89,7 +94,7 @@ export default () => {
 
         {/* EPISODE 12 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='master-of-my-emotions' src="https://anchor.fm/new-agent-mindset/embed/episodes/Master-of-My-Emotions-ek10qi" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+          <iframe title='master-of-my-emotions' src="https://anchor.fm/new-agent-mindset/embed/episodes/Master-of-My-Emotions-ek10qi" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 11 */}
@@ -122,7 +127,7 @@ export default () => {
 
         {/* EPISODE 10 */}
         <div className={MainStyles.podcastContainer}>
-          <iframe title='tomorrow-is-buried-with-yesterday' src="https://anchor.fm/new-agent-mindset/embed/episodes/Tomorrow-Is-Buried-with-Yesterday-ejm6do" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+          <iframe title='tomorrow-is-buried-with-yesterday' src="https://anchor.fm/new-agent-mindset/embed/episodes/Tomorrow-Is-Buried-with-Yesterday-ejm6do" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
         </div>
 
         {/* EPISODE 9 */}
