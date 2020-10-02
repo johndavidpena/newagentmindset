@@ -59,6 +59,34 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 15 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601658253/New%20Agent%20Mindset/Episodes/NewAgentSalary-m400.jpg' alt='episode-15-thumbnail' title='episode-15-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601658253/New%20Agent%20Mindset/Episodes/NewAgentSalary-m400.jpg' alt='episode-15-thumbnail' title='episode-15-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1601658254/New%20Agent%20Mindset/Episodes/NewAgentSalary-d770.jpg' alt='episode-15-thumbnail' title='episode-15-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='new-real-estate-agent-salary' width="560" height="315" src="https://www.youtube.com/embed/jdwZar3p4pM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
+
         {/* EPISODE 14 */}
         <div className={MainStyles.podcastContainer}>
           <iframe title='this-too-shall-pass' src="https://anchor.fm/new-agent-mindset/embed/episodes/This-Too-Shall-Pass-ekbl27" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
