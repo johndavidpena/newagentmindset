@@ -111,7 +111,7 @@ export default () => {
         )}
 
         {screenSize === 'desktop' && (
-          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-d.jpg' alt='focus-on-why' title='focus-on-why' />
+          <img src='https://res.cloudinary.com/mimas-music/image/upload/v1597532648/New%20Agent%20Mindset/focus-on-why-m.jpg' alt='focus-on-why' title='focus-on-why' />
         )}
 
         <p>Some advantages of starting with WHY are that it provides a certain clarity and focus to what you do with your time and energy. It puts up some long term goal posts to aim for, and your WHY helps you figure out if this is something that you're actually passionate about. And if you're not passionate and committed to being a real estate agent, you're not going to stick with it.</p>
@@ -152,13 +152,13 @@ export default () => {
 
         <br />
 
-        <div className={MainStyles.facebookGroup}>
+        {/* <div className={MainStyles.facebookGroup}>
           <a href='https://bit.ly/3kI6Ngw' target='_blank'>
             <img src='https://res.cloudinary.com/mimas-music/image/upload/v1598280362/New%20Agent%20Mindset/facebook-groups550px.jpg' alt='join-facebook-group' title='join-facebook-group' />
           </a>
         </div>
 
-        <p>In addition to joining the Facebook Group, please check out the <Link href='/resources'><span className={MainStyles.internalLink}>Resources Hub</span></Link> by clicking on the menu link above. Currently I am asking new agents to submit their needs here. Tell me what you need, what would be useful, what are your pain points?</p>
+        <p>In addition to joining the Facebook Group, please check out the <Link href='/resources'><span className={MainStyles.internalLink}>Resources Hub</span></Link> by clicking on the menu link above. Currently I am asking new agents to submit their needs here. Tell me what you need, what would be useful, what are your pain points?</p> */}
 
         <p>If you'd like to see the video episode of this post, check out the link below!</p>
 

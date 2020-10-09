@@ -47,15 +47,11 @@
   </url>
 
   <url>
-    <loc>https://newagentmindset.com/resources/buyers/contact/index</loc>
+    <loc>https://newagentmindset.com/resources/buyers/followup/index</loc>
   </url>
 
   <url>
     <loc>https://newagentmindset.com/resources/buyers/videos/index</loc>
-  </url>
-
-  <url>
-    <loc>https://newagentmindset.com/resources/buyers/followup/index</loc>
   </url>
 
   <url>
@@ -64,5 +60,9 @@
 
   <url>
     <loc>https://newagentmindset.com/resources/buyers/scripts/lpmama</loc>
+  </url>
+
+  <url>
+    <loc>https://newagentmindset.com/resources/buyers/contact/index</loc>
   </url>
 </urlset>

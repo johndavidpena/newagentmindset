@@ -59,6 +59,37 @@ export default () => {
       />
 
       <div>
+        {/* EPISODE 16 */}
+        {!loadVideo && screenSize === 'mobile' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1602263048/New%20Agent%20Mindset/Episodes/halloween-m400.jpg' alt='episode-16-thumbnail' title='episode-16-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'tablet' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1602263048/New%20Agent%20Mindset/Episodes/halloween-m400.jpg' alt='episode-16-thumbnail' title='episode-16-thumbnail' />
+          </div>
+        )}
+
+        {!loadVideo && screenSize === 'desktop' && (
+          <div className={IndexStyles.thumbnailContainer}>
+            <button onClick={() => setLoadVideo(true)}>CLICK To WATCH</button>
+            <img src='https://res.cloudinary.com/mimas-music/image/upload/v1602263048/New%20Agent%20Mindset/Episodes/halloween-d770.jpg' alt='episode-16-thumbnail' title='episode-16-thumbnail' />
+          </div>
+        )}
+
+        {loadVideo && <div className={MainStyles.videoContainer}>
+          <div className={MainStyles.videoResponsive}>
+            <iframe title='halloween-scare-and-pivot' width="560" height="315" src="https://www.youtube.com/embed/JJzcTqN6fIM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+        </div>}
+
+        <br />
+        <br />
+
         {/* EPISODE 15 */}
         {!loadVideo && screenSize === 'mobile' && (
           <div className={IndexStyles.thumbnailContainer}>

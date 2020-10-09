@@ -47,15 +47,15 @@ export default () => {
          <span aria-hidden="true" className={MainStyles.title2}>&nbsp;hub</span>
         </h1>
 
-        <div className={ResourceStyles.topSection}>
+        {/* <div className={ResourceStyles.topSection}>
           <p>Welcome new agents, what do you need?</p>
           <ResourceNeeds />
-        </div>
+        </div> */}
 
-        {/* <NewAgentCard />
+        {/* <NewAgentCard /> */}
 
         <br />
-        <br /> */}
+        <br />
 
         <BuyerCard />
       </>
